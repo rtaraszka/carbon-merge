@@ -1,0 +1,5 @@
+# Loading
+
+```javascript
+<Loading />
+```

@@ -1,0 +1,106 @@
+module.exports = {
+  components: {
+    categories: [
+      {
+        name: "Action",
+        include: [
+          "src/Button/Button.js",
+          "src/Link/Link.js",
+          "src/FileUploader/FileUploader.js",
+          "src/Copy/Copy.js",
+          "src/CopyButton/CopyButton.js",
+        ]
+      },
+      {
+        name: "Navigation",
+        include: [
+          "src/Breadcrumb/Breadcrumb.js",
+          "src/BreadcrumbItem/BreadcrumbItem.js",
+          "src/Tab/Tab.js",
+          "src/Tabs/Tabs.js",
+          "src/TabContent/TabContent.js",
+          "src/ContentSwitcher/ContentSwitcher.js",
+          "src/Switch/Switch.js",
+          "src/OverflowMenu/OverflowMenu.js",
+          "src/OverflowMenuItem/OverflowMenuItem.js",
+          "src/Search/Search.js",
+          "src/SearchFilterButton/SearchFilterButton.js",
+          "src/SearchLayoutButton/SearchLayoutButton.js",
+          "src/Toolbar/Toolbar.js",
+          "src/ToolbarItem/ToolbarItem.js",
+          "src/ToolbarTitle/ToolbarTitle.js",
+          "src/ToolbarOption/ToolbarOption.js",
+          "src/ToolbarDivider/ToolbarDivider.js",
+        ] 
+      },
+      {
+        name: "Form",
+        include: [
+          "src/TextInput/TextInput.js",
+          "src/TextArea/TextArea.js",
+          "src/NumberInput/NumberInput.js",
+          "src/Checkbox/Checkbox.js",
+          "src/RadioButton/RadioButton.js",
+          "src/RadioButtonGroup/RadioButtonGroup.js",
+          "src/Toggle/Toggle.js",
+          "src/ToggleSmall/ToggleSmall.js",
+          "src/ComboBox/ComboBox.js",
+          "src/Dropdown/Dropdown.js",
+          "src/DropdownItem/DropdownItem.js",
+          "src/Select/Select.js",
+          "src/MultiSelect/MultiSelect.js",
+          "src/ListItem/ListItem.js",
+          "src/SelectItem/SelectItem.js",
+          "src/SelectItemGroup/SelectItemGroup.js",
+          "src/RadioTile/RadioTile.js",
+          "src/TileGroup/TileGroup.js",
+          "src/Slider/Slider.js",
+          "src/TimePicker/TimePicker.js",
+          "src/TimePickerSelect/TimePickerSelect.js",
+          "src/InlineCheckbox/InlineCheckbox.js",
+        ]
+      },
+      {
+        name: "Content",
+        include: [
+          "src/Accordion/Accordion.js",
+          "src/AccordionItem/AccordionItem.js",
+          "src/Notification/Notification.js",
+          "src/OrderedList/OrderedList.js",
+          "src/UnorderedList/UnorderedList.js",
+          "src/CodeSnippet/CodeSnippet.js",
+          "src/Pagination/Pagination.js",
+          "src/ProgressIndicator/ProgressIndicator.js",
+          "src/ProgressStep/ProgressStep.js",
+          "src/InlineLoading/InlineLoading.js",
+          "src/Tooltip/Tooltip.js",
+          "src/Tag/Tag.js",
+        ] 
+      },
+      {
+        name: "Table",
+        include: [
+          "src/Table/Table.js",
+          "src/TableRow/TableRow.js",
+          "src/TableHead/TableHead.js",
+          "src/TableHeader/TableHeader.js",
+          "src/TableBody/TableBody.js",
+          "src/TableData/TableData.js"
+        ] 
+      }
+    ]
+  },
+  name: "IBM Carbon"
+};
+
+
+/* 
+** Temporarily unsuported: 
+** "src/DatePicker/DatePicker.js",
+** "src/DatePickerInput/DatePickerInput.js",
+** "src/DataTable/DataTable.js"
+** "src/Footer/Footer.js"  
+** "src/Loading/Loading.js"
+** "src/TooltipDefinition/TooltipDefinition.js",
+** "src/TooltipSimple/TooltipSimple.js",
+*/

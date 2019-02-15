@@ -1,0 +1,5 @@
+# InlineLoading
+
+```javascript
+<InlineLoading />
+```
