@@ -3,7 +3,8 @@ import MultiSelect from '../MultiSelect';
 
 export default (
 <MultiSelect 
-  key="1"
+  uxpId="1"
+  label="Hello"
   items={[
     {
         "label": "Option 1",

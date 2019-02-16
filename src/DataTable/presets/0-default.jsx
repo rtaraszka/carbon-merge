@@ -3,7 +3,7 @@ import DataTable from "../DataTable";
 
 export default (
   <DataTable
-    key="1"
+    uxpId="1"
     rows={[
       {
         id: "a",

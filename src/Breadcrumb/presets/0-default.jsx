@@ -3,14 +3,14 @@ import Breadcrumb from '../Breadcrumb';
 import BreadcrumbItem from '../../BreadcrumbItem/BreadcrumbItem';
 
 export default (
-  <Breadcrumb key="1">
-      <BreadcrumbItem key="2" href="#">
+  <Breadcrumb uxpId="1">
+      <BreadcrumbItem uxpId="2" href="#">
         IBM Carbon
       </BreadcrumbItem>
-      <BreadcrumbItem key="3" href="#">
+      <BreadcrumbItem uxpId="3" href="#">
         UXPin Merge
       </BreadcrumbItem>
-      <BreadcrumbItem key="4" href="#">
+      <BreadcrumbItem uxpId="4" href="#">
         React.js
       </BreadcrumbItem>
   </Breadcrumb>

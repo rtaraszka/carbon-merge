@@ -2,7 +2,7 @@
 
 ```javascript
 <NumberInput
-  key="1"
+  uxpId="1"
   min={0}
   max={100}
   id="test"

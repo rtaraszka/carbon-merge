@@ -1,8 +1,8 @@
 # TimePickerSelect
 
 ```javascript
-  <TimePickerSelect id="time-picker-select-1" key="2">
-    <SelectItem value="AM" text="AM" key="3" />
-    <SelectItem value="PM" text="PM" key="4" />
+  <TimePickerSelect id="time-picker-select-1" uxpId="2">
+    <SelectItem value="AM" text="AM" uxpId="3" />
+    <SelectItem value="PM" text="PM" uxpId="4" />
   </TimePickerSelect>
 ```

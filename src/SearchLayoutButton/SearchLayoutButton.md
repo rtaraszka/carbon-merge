@@ -2,7 +2,7 @@
 
 ```javascript
 <SearchLayoutButton
-  key="1"
+  uxpId="1"
   format="grid"
 />
 ```

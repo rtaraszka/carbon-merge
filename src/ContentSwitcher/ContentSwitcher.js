@@ -4,7 +4,7 @@ import { ContentSwitcher as ContentSwitcherM } from "carbon-components-react";
 
 function ContentSwitcher(props) {
   return (
-    <ContentSwitcherM {...props}>
+    <ContentSwitcherM {...props} style={{"width": "100%"}}>
       {props.children}
     </ContentSwitcherM>
   );

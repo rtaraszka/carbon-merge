@@ -1,5 +1,5 @@
 # ToolbarDivider
 
 ```javascript
-<ToolbarDivider key="1"/>
+<ToolbarDivider uxpId="1"/>
 ```

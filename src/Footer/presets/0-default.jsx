@@ -3,7 +3,7 @@ import Footer from "../Footer";
 
 export default (
 <Footer
-  key="1"
+  uxpId="1"
   className="some-class"
   labelOne="Need Help?"
   linkTextOne="Contact Bluemix Sales"

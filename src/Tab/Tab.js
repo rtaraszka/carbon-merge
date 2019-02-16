@@ -7,6 +7,7 @@ function Tab(props) {
 }
 
 Tab.propTypes = {
+    children: PropTypes.node,
     /**
      * Specify an optional className to be added to your Tab
      */

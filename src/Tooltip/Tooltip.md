@@ -2,7 +2,7 @@
 
 ```javascript
 <Tooltip
-  key="1"
+  uxpId="1"
   className="tooltip--class"
   triggerClassName="tooltip--trigger-class"
   triggerText="Tooltip"

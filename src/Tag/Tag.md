@@ -1,5 +1,5 @@
 # Tag
 
 ```javascript
-  <Tag type="beta" key="1">Merge!</Tag>
+  <Tag type="beta" uxpId="1">Merge!</Tag>
 ```

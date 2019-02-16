@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { SearchLayoutButton as SearchLayoutButtonM } from "carbon-components-react";
 
 function SearchLayoutButton(props) {
-  return <SearchLayoutButtonM {...props} />;
+  return <SearchLayoutButtonM {...props} style={{"marginLeft": 0}} />;
 }
 
 SearchLayoutButton.propTypes = {

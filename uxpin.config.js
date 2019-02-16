@@ -7,7 +7,6 @@ module.exports = {
           "src/Button/Button.js",
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
-          "src/Copy/Copy.js",
           "src/CopyButton/CopyButton.js",
         ]
       },
@@ -57,7 +56,7 @@ module.exports = {
           "src/Slider/Slider.js",
           "src/TimePicker/TimePicker.js",
           "src/TimePickerSelect/TimePickerSelect.js",
-          "src/InlineCheckbox/InlineCheckbox.js",
+          "src/InlineCheckbox/InlineCheckbox.js"
         ]
       },
       {
@@ -85,8 +84,22 @@ module.exports = {
           "src/TableHead/TableHead.js",
           "src/TableHeader/TableHeader.js",
           "src/TableBody/TableBody.js",
-          "src/TableData/TableData.js"
+          "src/TableData/TableData.js",
+          "src/Header/Header/Header.js",
+          "src/Header/HeaderGlobalAction/HeaderGlobalAction.js",
+          "src/Header/HeaderGlobalBar/HeaderGlobalBar.js",
+          "src/Header/HeaderMenu/HeaderMenu.js",
+          "src/Header/HeaderMenuButton/HeaderMenuButton.js",
+          "src/Header/HeaderMenuItem/HeaderMenuItem.js",
+          "src/Header/HeaderName/HeaderName.js",
+          "src/Header/HeaderNavigation/HeaderNavigation.js",
         ] 
+      },
+      {
+        name: "Experimental",
+        include: [
+          "src/Icon/Icon.js"
+        ]
       }
     ]
   },
@@ -96,11 +109,13 @@ module.exports = {
 
 /* 
 ** Temporarily unsuported: 
-** "src/DatePicker/DatePicker.js",
-** "src/DatePickerInput/DatePickerInput.js",
+** 
 ** "src/DataTable/DataTable.js"
 ** "src/Footer/Footer.js"  
 ** "src/Loading/Loading.js"
 ** "src/TooltipDefinition/TooltipDefinition.js",
 ** "src/TooltipSimple/TooltipSimple.js",
+**          "src/Copy/Copy.js",
+** "src/DatePicker/DatePicker.js",
+** "src/DatePickerInput/DatePickerInput.js"
 */

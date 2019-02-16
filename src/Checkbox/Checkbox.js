@@ -25,7 +25,9 @@ export default class Checkbox extends React.Component {
       <CheckboxM {...this.props} 
         id="checkbox-merge" 
         checked={this.state.checked} 
-        onChange={(e) => this.handleChange('', "checkbox-merge", e)} />
+        onChange={(e) => this.handleChange('', "checkbox-merge", e)}
+        style={{"marginTop": 0}}
+        />
     );
   }
 }

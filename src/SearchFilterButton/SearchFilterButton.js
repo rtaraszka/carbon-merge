@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { SearchFilterButton as SearchFilterButtonM } from "carbon-components-react";
 
 function SearchFilterButton(props) {
-  return <SearchFilterButtonM {...props} />;
+  return <SearchFilterButtonM {...props} style={{"marginLeft": 0}} />;
 }
 
 SearchFilterButton.propTypes = {

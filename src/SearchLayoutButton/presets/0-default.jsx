@@ -3,7 +3,7 @@ import SearchLayoutButton from "../SearchLayoutButton";
 
 export default (
 <SearchLayoutButton
-  key="1"
+  uxpId="1"
   format="grid"
 />
 );

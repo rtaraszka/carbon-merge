@@ -1,5 +1,5 @@
 # OverflowMenuItem
 
 ```javascript
-<OverflowMenuItem key="1" itemText="Option 1" primaryFocus={true} />
+<OverflowMenuItem uxpId="1" itemText="Option 1" primaryFocus={true} />
 ```

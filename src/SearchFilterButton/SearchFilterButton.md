@@ -2,7 +2,7 @@
 
 ```javascript
 <SearchFilterButton
-  key="1"
+  uxpId="1"
   label="Filter"
   labelText="Filter"
 />

@@ -19,7 +19,7 @@ module.exports = {
           loader: 'svg-react-loader'
         },
         {
-          test: /\.css$/,
+          test: /\.(s*)css$/,
           use: [
             {
               loader: 'style-loader'
@@ -30,6 +30,9 @@ module.exports = {
                 importLoaders: 2
               }
             },
+            {
+              loader: 'sass-loader'
+            }
           ]
         },
         {

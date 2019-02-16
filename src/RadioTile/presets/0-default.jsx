@@ -3,7 +3,7 @@ import RadioTile from "../RadioTile";
 
 export default (
 <RadioTile
-  key="1"
+  uxpId="1"
   name="merge"
   value="merge"
   labelText="merge">

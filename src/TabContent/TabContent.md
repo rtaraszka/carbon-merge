@@ -1,7 +1,7 @@
 # TabContent
 
 ```javascript
-<TabContent key="1">
+<TabContent uxpId="1">
 Merge
 </TabContent>
 ```

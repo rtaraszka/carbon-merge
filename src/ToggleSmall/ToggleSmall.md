@@ -1,5 +1,5 @@
 # ToggleSmall
 
 ```javascript
-<ToggleSmall key="1" id="toggle-small-merge" toggled={true} />
+<ToggleSmall uxpId="1" id="toggle-small-merge" toggled={true} />
 ```

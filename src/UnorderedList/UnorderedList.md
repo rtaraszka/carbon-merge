@@ -1,9 +1,9 @@
 # UnorderedList
 
 ```javascript
-<UnorderedList key="1">
-    <ListItem key="2">IBM Carbon</ListItem>
-    <ListItem key="3">UXPin Merge</ListItem>
-    <ListItem key="4">React.js</ListItem>
+<UnorderedList uxpId="1">
+    <ListItem uxpId="2">IBM Carbon</ListItem>
+    <ListItem uxpId="3">UXPin Merge</ListItem>
+    <ListItem uxpId="4">React.js</ListItem>
 </UnorderedList>
 ```

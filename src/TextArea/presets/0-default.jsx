@@ -3,7 +3,7 @@ import TextArea from "../TextArea";
 
 export default (
 <TextArea
-  key="1"
+  uxpId="1"
   labelText="Label"
   helperText="testHelper"
 />

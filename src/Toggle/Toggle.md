@@ -1,5 +1,5 @@
 # Toggle
 
 ```javascript
-<Toggle key="1" toggled={true} />
+<Toggle uxpId="1" toggled={true} />
 ```

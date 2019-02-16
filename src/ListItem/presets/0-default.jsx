@@ -2,7 +2,7 @@ import * as React from 'react';
 import ListItem from '../ListItem';
 
 export default (
-  <ListItem key="1">
+  <ListItem uxpId="1">
     Merge
   </ListItem>
 );
