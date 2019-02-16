@@ -2,8 +2,9 @@ module.exports = {
   components: {
     categories: [
       {
-        name: "Action",
+        name: "General",
         include: [
+          "src/Icon/Icon.js",
           "src/Button/Button.js",
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
@@ -20,17 +21,22 @@ module.exports = {
           "src/TabContent/TabContent.js",
           "src/ContentSwitcher/ContentSwitcher.js",
           "src/Switch/Switch.js",
-          "src/OverflowMenu/OverflowMenu.js",
-          "src/OverflowMenuItem/OverflowMenuItem.js",
           "src/Search/Search.js",
           "src/SearchFilterButton/SearchFilterButton.js",
           "src/SearchLayoutButton/SearchLayoutButton.js",
+        ] 
+      },
+      {
+        name: "Toolbar",
+        include: [
           "src/Toolbar/Toolbar.js",
           "src/ToolbarItem/ToolbarItem.js",
           "src/ToolbarTitle/ToolbarTitle.js",
           "src/ToolbarOption/ToolbarOption.js",
           "src/ToolbarDivider/ToolbarDivider.js",
-        ] 
+          "src/OverflowMenu/OverflowMenu.js",
+          "src/OverflowMenuItem/OverflowMenuItem.js",
+        ]
       },
       {
         name: "Form",
@@ -43,11 +49,6 @@ module.exports = {
           "src/RadioButtonGroup/RadioButtonGroup.js",
           "src/Toggle/Toggle.js",
           "src/ToggleSmall/ToggleSmall.js",
-          "src/ComboBox/ComboBox.js",
-          "src/Dropdown/Dropdown.js",
-          "src/DropdownItem/DropdownItem.js",
-          "src/Select/Select.js",
-          "src/MultiSelect/MultiSelect.js",
           "src/ListItem/ListItem.js",
           "src/SelectItem/SelectItem.js",
           "src/SelectItemGroup/SelectItemGroup.js",
@@ -57,6 +58,17 @@ module.exports = {
           "src/TimePicker/TimePicker.js",
           "src/TimePickerSelect/TimePickerSelect.js",
           "src/InlineCheckbox/InlineCheckbox.js"
+        ]
+      },
+      {
+        name: "Selects and Dropdowns",
+        include: [
+          "src/ComboBox/ComboBox.js",
+          "src/Dropdown/Dropdown.js",
+          "src/DropdownItem/DropdownItem.js",
+          "src/Select/Select.js",
+          "src/MultiSelect/MultiSelect.js",
+
         ]
       },
       {
@@ -85,6 +97,11 @@ module.exports = {
           "src/TableHeader/TableHeader.js",
           "src/TableBody/TableBody.js",
           "src/TableData/TableData.js",
+        ] 
+      },
+      {
+        name: "Header",
+        include: [
           "src/Header/Header/Header.js",
           "src/Header/HeaderGlobalAction/HeaderGlobalAction.js",
           "src/Header/HeaderGlobalBar/HeaderGlobalBar.js",
@@ -93,12 +110,6 @@ module.exports = {
           "src/Header/HeaderMenuItem/HeaderMenuItem.js",
           "src/Header/HeaderName/HeaderName.js",
           "src/Header/HeaderNavigation/HeaderNavigation.js",
-        ] 
-      },
-      {
-        name: "Experimental",
-        include: [
-          "src/Icon/Icon.js"
         ]
       }
     ]
@@ -118,4 +129,22 @@ module.exports = {
 **          "src/Copy/Copy.js",
 ** "src/DatePicker/DatePicker.js",
 ** "src/DatePickerInput/DatePickerInput.js"
+
+      {
+        name: "SideNav",
+        include: [
+          "src/SideNav/SideNav/SideNav.js",
+          "src/SideNav/SideNavDetails/SideNavDetails.js",
+          "src/SideNav/SideNavFooter/SideNavFooter.js",
+          "src/SideNav/SideNavHeader/SideNavHeader.js",
+          "src/SideNav/SideNavIcon/SideNavIcon.js",
+          "src/SideNav/SideNavItem/SideNavItem.js",
+          "src/SideNav/SideNavItems/SideNavItems.js",
+          "src/SideNav/SideNavLink/SideNavLink.js",
+          "src/SideNav/SideNavLinkText/SideNavLinkText.js",
+          "src/SideNav/SideNavMenu/SideNavMenu.js",
+          "src/SideNav/SideNavMenuItem/SideNavMenuItem.js",
+          "src/SideNav/SideNavSwitcher/SideNavSwitcher.js",
+        ]
+      }
 */
