@@ -120,31 +120,24 @@ module.exports = {
 
 /* 
 ** Temporarily unsuported: 
-** 
 ** "src/DataTable/DataTable.js"
 ** "src/Footer/Footer.js"  
 ** "src/Loading/Loading.js"
 ** "src/TooltipDefinition/TooltipDefinition.js",
 ** "src/TooltipSimple/TooltipSimple.js",
-**          "src/Copy/Copy.js",
+** "src/Copy/Copy.js",
 ** "src/DatePicker/DatePicker.js",
 ** "src/DatePickerInput/DatePickerInput.js"
-
-      {
-        name: "SideNav",
-        include: [
-          "src/SideNav/SideNav/SideNav.js",
-          "src/SideNav/SideNavDetails/SideNavDetails.js",
-          "src/SideNav/SideNavFooter/SideNavFooter.js",
-          "src/SideNav/SideNavHeader/SideNavHeader.js",
-          "src/SideNav/SideNavIcon/SideNavIcon.js",
-          "src/SideNav/SideNavItem/SideNavItem.js",
-          "src/SideNav/SideNavItems/SideNavItems.js",
-          "src/SideNav/SideNavLink/SideNavLink.js",
-          "src/SideNav/SideNavLinkText/SideNavLinkText.js",
-          "src/SideNav/SideNavMenu/SideNavMenu.js",
-          "src/SideNav/SideNavMenuItem/SideNavMenuItem.js",
-          "src/SideNav/SideNavSwitcher/SideNavSwitcher.js",
-        ]
-      }
+** "src/SideNav/SideNav/SideNav.js",
+** "src/SideNav/SideNavDetails/SideNavDetails.js",
+** "src/SideNav/SideNavFooter/SideNavFooter.js",
+** "src/SideNav/SideNavHeader/SideNavHeader.js",
+** "src/SideNav/SideNavIcon/SideNavIcon.js",
+** "src/SideNav/SideNavItem/SideNavItem.js",
+** "src/SideNav/SideNavItems/SideNavItems.js",
+** "src/SideNav/SideNavLink/SideNavLink.js",
+** "src/SideNav/SideNavLinkText/SideNavLinkText.js",
+** "src/SideNav/SideNavMenu/SideNavMenu.js",
+** "src/SideNav/SideNavMenuItem/SideNavMenuItem.js",
+** "src/SideNav/SideNavSwitcher/SideNavSwitcher.js"
 */
