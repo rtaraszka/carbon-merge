@@ -1,6 +1,4 @@
 jobs:
-  build:
-    working_directory: ~/project/
     steps:
       - checkout
       - run:
