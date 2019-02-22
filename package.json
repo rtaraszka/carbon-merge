@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "uxpin-merge --webpack-config ./webpack.config.js --wrapper ./src/Wrapper/UXPinWrapper.js --uxpin-domain merge.uxpin.cloud"
+    "start": "uxpin-merge --webpack-config ./webpack.config.js --wrapper ./src/Wrapper/UXPinWrapper.js --uxpin-domain 18439arrangecc2.docker.uxpin.com"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@carbon/icons-react": "0.0.1-alpha.12",
-    "@uxpin/merge-cli": "^1.1.1",
+    "@uxpin/merge-cli": "^1.3.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
     "carbon-components": "^9.76.1",

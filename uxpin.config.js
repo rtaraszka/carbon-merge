@@ -56,8 +56,7 @@ module.exports = {
           "src/TileGroup/TileGroup.js",
           "src/Slider/Slider.js",
           "src/TimePicker/TimePicker.js",
-          "src/TimePickerSelect/TimePickerSelect.js",
-          "src/InlineCheckbox/InlineCheckbox.js"
+          "src/TimePickerSelect/TimePickerSelect.js"
         ]
       },
       {
