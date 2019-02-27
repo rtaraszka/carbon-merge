@@ -188,6 +188,7 @@ function Button(props) {
 }
 
 Button.propTypes = {
+  onClick: PropTypes.func,
   /**
    * Specify the content of your Button
    */

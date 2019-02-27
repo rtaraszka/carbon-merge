@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "uxpin-merge --webpack-config ./webpack.config.js --wrapper ./src/Wrapper/UXPinWrapper.js --uxpin-domain 18439arrangecc2.docker.uxpin.com"
+    "start": "uxpin-merge --webpack-config ./webpack.config.js --wrapper ./src/Wrapper/UXPinWrapper.js --uxpin-domain merge.uxpin.cloud",
   },
   "author": "",
   "license": "ISC",
