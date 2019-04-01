@@ -18,6 +18,6 @@ export default (
     </SideNavMenuItem>
     <SideNavMenuItem href="#" uxpId="8">
       Link
-  </SideNavMenuItem>
+    </SideNavMenuItem>
   </SideNavMenu>
 );
