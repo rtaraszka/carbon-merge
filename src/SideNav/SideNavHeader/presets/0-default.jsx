@@ -5,7 +5,7 @@ import SideNavSwitcher from "../../SideNavSwitcher/SideNavSwitcher";
 
 
 export default (
-  <SideNavHeader uxpId="1" icon={`<Icon icon="iconDevops" />`}>
+  <SideNavHeader uxpId="1" icon={<Icon icon="iconDevops" uxpId="4" />}>
     <SideNavDetails title="Side navigation title" uxpId="2">
       <SideNavSwitcher
         uxpId="3"

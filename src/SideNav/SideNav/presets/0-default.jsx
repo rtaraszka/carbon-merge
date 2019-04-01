@@ -10,7 +10,7 @@ import SideNavMenuItem from "../../SideNavMenuItem/SideNavMenuItem";
 
 export default (
   <SideNav aria-label="Side navigation" uxpId="0">
-    <SideNavHeader uxpId="1" icon={`<Icon icon="iconDevops" />`}>
+    <SideNavHeader uxpId="1" icon={<Icon icon="iconDevops" uxpId="9" />}>
       <SideNavDetails title="Side navigation title" uxpId="2">
         <SideNavSwitcher
           uxpId="3"
@@ -28,7 +28,7 @@ export default (
         defaultExpanded
         isActive
         title="Category title"
-        icon={`<Icon icon="iconChat" />`}
+        icon={<Icon icon="iconChat" uxpId="10" />}
       >
         <SideNavMenuItem href="#" uxpId="7">
           Link

@@ -14,7 +14,7 @@ export default (
       defaultExpanded
       isActive
       title="Category title"
-      icon={`<Icon icon="iconChat" />`}
+      icon={<Icon icon="iconChat" uxpId="10" />}
     >
       <SideNavMenuItem href="#" uxpId="7">Link</SideNavMenuItem>
       <SideNavMenuItem aria-current="page" href="#" uxpId="9">
