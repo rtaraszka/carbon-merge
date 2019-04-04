@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Breadcrumb as BreadcrumbM } from "carbon-components-react";
+import { Breadcrumb as BreadcrumbComponent } from "carbon-components-react";
 
 function Breadcrumb(props) {
   return (
-    <BreadcrumbM {...props}>
-      {props.children}
-    </BreadcrumbM>
+    <BreadcrumbComponent {...props} />
   );
 }
 
@@ -27,4 +25,4 @@ Breadcrumb.propTypes = {
   noTrailingSlash: PropTypes.bool,
 };
 
-export { Breadcrumb as default };
+export default Breadcrumb;

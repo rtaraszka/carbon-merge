@@ -1,18 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import Breadcrumb from '../Breadcrumb';
 import BreadcrumbItem from '../../BreadcrumbItem/BreadcrumbItem';
 
 export default (
-  <Breadcrumb uxpId="1">
-      <BreadcrumbItem uxpId="2" href="#">
-        IBM Carbon
-      </BreadcrumbItem>
-      <BreadcrumbItem uxpId="3" href="#">
-        UXPin Merge
-      </BreadcrumbItem>
-      <BreadcrumbItem uxpId="4" href="#">
-        React.js
-      </BreadcrumbItem>
-  </Breadcrumb>
- 
+    <Breadcrumb className="some-class" uxpId="Breadcrumb0">
+        <BreadcrumbItem href="#" uxpId="BreadcrumbItem0">Breadcrumb 1</BreadcrumbItem>
+        <BreadcrumbItem href="#" uxpId="BreadcrumbItem1">Breadcrumb 2</BreadcrumbItem>
+        <BreadcrumbItem href="#" uxpId="BreadcrumbItem2">Breadcrumb 3</BreadcrumbItem>
+    </Breadcrumb>
 );
