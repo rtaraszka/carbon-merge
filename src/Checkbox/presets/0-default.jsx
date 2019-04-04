@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import Checkbox from '../Checkbox';
 
 export default (
-  <Checkbox uxpId="1" id="checkbox-3476505641" labelText="Hello" />
+  <Checkbox id="checkbox-3476505641" labelText="Checkbox label" uxpId="Checkbox0" />
 );

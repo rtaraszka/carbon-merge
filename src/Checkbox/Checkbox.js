@@ -1,33 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Checkbox as CheckboxM } from "carbon-components-react";
+import { Checkbox as CheckboxComponent } from "carbon-components-react";
 
-export default class Checkbox extends React.Component {
-  constructor() {
-    super();
+class Checkbox extends Component {
+  constructor(props) {
+    super(props);
 
     this.state = {
-      checked: false
-    }
+      checked: props.checked,
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange() {
-    if (this.state.checked === false) {
-      this.setState({checked: true});
-    }
-    else {
-      this.setState({checked: false})
+    this.setState({ checked: !this.state.checked });
+
+    if (this.props.onChange) {
+      this.props.onChange();
     }
   }
 
   render() {
     return(
-      <CheckboxM {...this.props} 
-        id="checkbox-merge" 
-        checked={this.state.checked} 
-        onChange={(e) => this.handleChange('', "checkbox-merge", e)}
-        style={{"marginTop": 0}}
-        />
+      <CheckboxComponent {...this.props} checked={this.state.checked} onChange={this.handleChange} />
     );
   }
 }
@@ -67,7 +62,7 @@ Checkbox.propTypes = {
    * Provide a label to provide a description of the Checkbox input that you are
    * exposing to the user
    */
-  labelText: PropTypes.node,
+  labelText: PropTypes.node.isRequired,
 
   /**
    * Specify whether the label should be hidden, or not
@@ -90,3 +85,10 @@ Checkbox.propTypes = {
    */
   wrapperClassName: PropTypes.string,
 };
+
+Checkbox.defaultProps = {
+  checked: false,
+  id: "checkbox-component",
+};
+
+export default Checkbox;
