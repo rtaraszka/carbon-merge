@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { CopyButton as CopyButtonM } from "carbon-components-react";
+import { CopyButton as CopyButtonComponent } from "carbon-components-react";
 
 function CopyButton(props) {
   return (
-    <div style={{"position": "relative", "width": "40px", "height": "40px", "margin": "0"}}>
-      <CopyButtonM {...props} />
-    </div>
+      <CopyButtonComponent {...props} />
   );
 }
 
@@ -37,7 +35,13 @@ CopyButton.propTypes = {
    * Specify an optional `onClick` handler that is called when the underlying
    * <button> is clicked
    */
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
-export { CopyButton as default };
+CopyButton.defaultProps = {
+  iconDescription: 'Copy to clipboard',
+  feedback: 'Copied!',
+  feedbackTimeout: 2000,
+};
+
+export default CopyButton;

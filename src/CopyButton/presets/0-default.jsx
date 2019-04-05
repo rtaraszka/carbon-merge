@@ -1,7 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import CopyButton from '../CopyButton';
 
 export default (
-  <CopyButton uxpId="1">Merge</CopyButton>
+  <CopyButton
+      feedback="Copied!"
+      feedbackTimeout={3000}
+      iconDescription="Copy to clipboard"
+      uxpId="CopyButton0"
+  />
 );
 
