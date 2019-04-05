@@ -6,7 +6,8 @@ export default (
         feedback="Feedback Enabled 👍"
         showLessText="Show less"
         showMoreText="Show more"
-        type="multi">
+        type="multi"
+        uxpId="CodeSnippet0">
         {`@mixin grid-container {
   width: 100%;
   padding-right: padding(mobile);

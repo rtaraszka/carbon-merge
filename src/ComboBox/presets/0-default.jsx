@@ -22,9 +22,9 @@ const items = [
     text: "Option 4",
     label: "Option 4"
   }
-]; 
+];
 
 export default (
-  <ComboBox uxpId="1" items={items} placeholder="Select..." />
+  <ComboBox items={items} placeholder="Filter..." uxpId="ComboBox0" />
 );
 
