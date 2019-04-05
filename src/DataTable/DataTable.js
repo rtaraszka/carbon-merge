@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { DataTable as DataTableM } from "carbon-components-react";
+import { DataTable as DataTableComponent } from "carbon-components-react";
 
 function DataTable(props) {
-  return <DataTableM {...props} />;
+  return <DataTableComponent {...props} />;
 }
 
 DataTable.propTypes = {
@@ -14,9 +14,9 @@ DataTable.propTypes = {
    * available on it.
    */
   rows: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired
-    })
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+      })
   ).isRequired,
 
   /**
@@ -26,16 +26,11 @@ DataTable.propTypes = {
    * the header.
    */
   headers: PropTypes.arrayOf(
-    PropTypes.shape({
-      key: PropTypes.string.isRequired,
-      header: PropTypes.node.isRequired
-    })
+      PropTypes.shape({
+        key: PropTypes.string.isRequired,
+        header: PropTypes.node.isRequired,
+      })
   ).isRequired,
-
-  /**
-   * Optional hook to manually control sorting of the rows.
-   */
-  sortRow: PropTypes.func,
 
   /**
    * Optional hook to manually control filtering of the rows from the
@@ -63,7 +58,18 @@ DataTable.propTypes = {
   /**
    * Optional boolean to remove borders from data table.
    */
-  shouldShowBorder: PropTypes.bool
+  shouldShowBorder: PropTypes.bool,
+
+  /**
+   * Specify whether the control should be a radio button or inline checkbox
+   */
+  radio: PropTypes.bool,
 };
 
-export { DataTable as default };
+DataTable.defaultProps = {
+  locale: 'en',
+  short: false,
+  shouldShowBorder: true,
+};
+
+export default DataTable;

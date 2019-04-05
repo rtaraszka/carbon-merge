@@ -50,7 +50,7 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | ContentSwitcher | ✅ Full Support |
 | CopyButton | ✅ Full Support |
 | DataTable | 🔻 Not Supported. Unknown issues.|
-| DataPicker | 🔻 Not Supported. Issue with the implementation of FlatPicker. Likely can be solved by direct implementation of FlatPicker. |
+| DataPicker | 🔶 Partial support. Only `simple` mode work. |
 | Dropdown | ✅ Full Support |
 | FileUploader | ✅ Full Support |
 | Footer | 🔻 Not Supported. Issues with absolutely positioned elements. |

@@ -56,7 +56,9 @@ module.exports = {
           "src/TileGroup/TileGroup.js",
           "src/Slider/Slider.js",
           "src/TimePicker/TimePicker.js",
-          "src/TimePickerSelect/TimePickerSelect.js"
+          "src/TimePickerSelect/TimePickerSelect.js",
+          "src/DatePicker/DatePicker.js",
+          "src/DatePickerInput/DatePickerInput.js",
         ]
       },
       {
@@ -90,6 +92,7 @@ module.exports = {
       {
         name: "Table",
         include: [
+          "src/DataTable/DataTable.js",
           "src/Table/Table.js",
           "src/TableRow/TableRow.js",
           "src/TableHead/TableHead.js",
@@ -131,8 +134,6 @@ module.exports = {
 ** "src/TooltipDefinition/TooltipDefinition.js",
 ** "src/TooltipSimple/TooltipSimple.js",
 ** "src/Copy/Copy.js",
-** "src/DatePicker/DatePicker.js",
-** "src/DatePickerInput/DatePickerInput.js"
 ** "src/SideNav/SideNav/SideNav.js",
 ** "src/SideNav/SideNavDetails/SideNavDetails.js",
 ** "src/SideNav/SideNavFooter/SideNavFooter.js",

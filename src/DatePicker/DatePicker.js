@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { DatePicker as DatePickerM } from "carbon-components-react";
+import { DatePicker as DatePickerComponent } from "carbon-components-react";
 
 function DatePicker(props) {
   return (
-    <DatePickerM {...props}>
-      {props.children}
-    </DatePickerM>
+    <DatePickerComponent {...props} />
   );
 }
 
@@ -104,64 +102,70 @@ DatePicker.propTypes = {
      * * `zh` - Mandarin
      */
     locale: PropTypes.oneOf([
-      'ar',
-      'at',
-      'be',
-      'bg',
-      'bn',
-      'cat',
-      'cs',
-      'cy',
-      'da',
-      'de',
-      'en',
-      'en',
-      'eo',
-      'es',
-      'et',
-      'fa',
-      'fi',
-      'fr',
-      'gr',
-      'he',
-      'hi',
-      'hr',
-      'hu',
-      'id',
-      'it',
-      'ja',
-      'ko',
-      'lt',
-      'lv',
-      'mk',
-      'mn',
-      'ms',
-      'my',
-      'nl',
-      'no',
-      'pa',
-      'pl',
-      'pt',
-      'ro',
-      'ru',
-      'si',
-      'sk',
-      'sl',
-      'sq',
-      'sr',
-      'sv',
-      'th',
-      'tr',
-      'uk',
-      'vn',
-      'zh',
+        'ar',
+        'at',
+        'be',
+        'bg',
+        'bn',
+        'cat',
+        'cs',
+        'cy',
+        'da',
+        'de',
+        'en',
+        'en',
+        'eo',
+        'es',
+        'et',
+        'fa',
+        'fi',
+        'fr',
+        'gr',
+        'he',
+        'hi',
+        'hr',
+        'hu',
+        'id',
+        'it',
+        'ja',
+        'ko',
+        'lt',
+        'lv',
+        'mk',
+        'mn',
+        'ms',
+        'my',
+        'nl',
+        'no',
+        'pa',
+        'pl',
+        'pt',
+        'ro',
+        'ru',
+        'si',
+        'sk',
+        'sl',
+        'sq',
+        'sr',
+        'sv',
+        'th',
+        'tr',
+        'uk',
+        'vn',
+        'zh',
     ]),
 
     /**
      * The value of the date value provided to flatpickr, could
      * be a date, a date number, a date string, an array of dates.
      */
-    value: PropTypes.string,
+    value: PropTypes.arrayOf(
+        PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.number,
+            PropTypes.object,
+        ])
+    ),
 
     /**
      * The DOM element or selector the Flatpicker should be inserted into. `<body>` by default.
@@ -181,7 +185,14 @@ DatePicker.propTypes = {
     /**
      * The maximum date that a user can pick to.
      */
-    maxDate: PropTypes.string, 
+    maxDate: PropTypes.string,
 };
 
-export { DatePicker as default };
+DatePicker.defaultProps = {
+    short: false,
+    light: false,
+    dateFormat: 'm/d/Y',
+    locale: 'en',
+};
+
+export default DatePicker;
