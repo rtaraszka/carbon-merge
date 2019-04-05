@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { CodeSnippet as CodeSnippetM } from "carbon-components-react";
+import { CodeSnippet as CodeSnippetComponent } from "carbon-components-react";
 
 function CodeSnippet(props) {
   return (
-    <CodeSnippetM {...props} onClick={props.onClick}>
-      {props.children}
-    </CodeSnippetM>
+    <CodeSnippetComponent {...props} />
   );
 }
 
@@ -14,7 +12,7 @@ CodeSnippet.propTypes = {
   /**
    * Provide the type of Code Snippet
    */
-  type: PropTypes.oneOf(["single", "inline", "multi"]),
+  type: PropTypes.oneOf(['single', 'inline', 'multi']),
 
   /**
    * Specify an optional className to be applied to the container node
@@ -69,7 +67,13 @@ CodeSnippet.propTypes = {
    * Specify whether you are using the light variant of the Code Snippet,
    * typically used for inline snippest to display an alternate color
    */
-  light: PropTypes.bool
+  light: PropTypes.bool,
 };
 
-export { CodeSnippet as default };
+CodeSnippet.defaultProps = {
+  type: 'single',
+  showMoreText: 'Show more',
+  showLessText: 'Show less',
+};
+
+export default CodeSnippet;
