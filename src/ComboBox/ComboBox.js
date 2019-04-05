@@ -2,16 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ComboBox as ComboBoxComponent } from "carbon-components-react";
 
-const defaultItemToString = item => {
-  console.log('item', item);
-
-  if (typeof item === 'string') {
-    return item;
-  }
-
-  return item && item.label;
-};
-
 function ComboBox(props) {
   return (
     <ComboBoxComponent {...props} />

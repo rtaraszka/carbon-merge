@@ -46,7 +46,7 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | Button | ✅ Full Support |
 | Checkbox | ✅ Full Support |
 | ComboBox | ✅ Full Support |
-| ComposedModal | 🔻 Not Supported. Issues with absolutely positioned elements. |
+| ComposedModal | 🔶 Partial support. Passing children doesn't work. To modify children use `modalHeader`, `modalBody`, `modalFooter` properties. |
 | ContentSwitcher | ✅ Full Support |
 | CopyButton | ✅ Full Support |
 | DataTable | 🔻 Not Supported. Unknown issues.|

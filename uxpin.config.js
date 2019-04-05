@@ -24,7 +24,7 @@ module.exports = {
           "src/Search/Search.js",
           "src/SearchFilterButton/SearchFilterButton.js",
           "src/SearchLayoutButton/SearchLayoutButton.js",
-        ] 
+        ]
       },
       {
         name: "Toolbar",
@@ -85,7 +85,7 @@ module.exports = {
           "src/InlineLoading/InlineLoading.js",
           "src/Tooltip/Tooltip.js",
           "src/Tag/Tag.js",
-        ] 
+        ]
       },
       {
         name: "Table",
@@ -96,7 +96,7 @@ module.exports = {
           "src/TableHeader/TableHeader.js",
           "src/TableBody/TableBody.js",
           "src/TableData/TableData.js",
-        ] 
+        ]
       },
       {
         name: "Header",
@@ -110,6 +110,12 @@ module.exports = {
           "src/Header/HeaderName/HeaderName.js",
           "src/Header/HeaderNavigation/HeaderNavigation.js",
         ]
+      },
+      {
+        name: "Modal",
+        include: [
+          "src/ComposedModal/ComposedModal.js",
+        ],
       }
     ]
   },
@@ -117,10 +123,10 @@ module.exports = {
 };
 
 
-/* 
-** Temporarily unsuported: 
+/*
+** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
-** "src/Footer/Footer.js"  
+** "src/Footer/Footer.js"
 ** "src/Loading/Loading.js"
 ** "src/TooltipDefinition/TooltipDefinition.js",
 ** "src/TooltipSimple/TooltipSimple.js",
