@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import ContentSwitcher from '../ContentSwitcher';
 import Switch from '../../Switch/Switch';
 
 export default (
-<ContentSwitcher uxpId="1" selectedIndex={0}>
-    <Switch uxpId="2" text="IBM Carbon" />
-    <Switch uxpId="3" text="UXPin Merge" />
-    <Switch uxpId="4" text="React.js" />
-</ContentSwitcher>
+    <ContentSwitcher uxpId="ContentSwitcher0">
+        <Switch name="one" text="First section" kind="anchor" uxpId="Switch0" />
+        <Switch name="two" text="Second section" kind="anchor" uxpId="Switch1" />
+        <Switch name="three" text="Third section" kind="anchor" uxpId="Switch2" />
+    </ContentSwitcher>
 );
