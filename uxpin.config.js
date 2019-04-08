@@ -65,8 +65,6 @@ module.exports = {
         name: "Selects and Dropdowns",
         include: [
           "src/ComboBox/ComboBox.js",
-          "src/Dropdown/Dropdown.js",
-          "src/DropdownItem/DropdownItem.js",
           "src/Select/Select.js",
           "src/MultiSelect/MultiSelect.js",
 
