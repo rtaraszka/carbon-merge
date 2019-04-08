@@ -117,7 +117,7 @@ module.exports = {
         include: [
           "src/ComposedModal/ComposedModal.js",
         ],
-      }
+      },
     ]
   },
   name: "IBM Carbon"
@@ -127,7 +127,6 @@ module.exports = {
 /*
 ** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
-** "src/Footer/Footer.js"
 ** "src/Loading/Loading.js"
 ** "src/TooltipDefinition/TooltipDefinition.js",
 ** "src/TooltipSimple/TooltipSimple.js",
