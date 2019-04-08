@@ -57,7 +57,7 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | Icon | ✅ Full Support |
 | InlineLoading | ✅ Full Support |
 | Link | ✅ Full Support |
-| Loading | 🔻 Not Supported. Issues with absolutely positioned elements. |
+| Loading | ✅ Full Support |
 | Modal | 🔻 Not Supported. Issues with absolutely positioned elements. |
 | MultiSelect | ✅ Full Support |
 | Notifications | ✅ Full Support |

@@ -9,6 +9,7 @@ module.exports = {
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
           "src/CopyButton/CopyButton.js",
+          "src/Loading/Loading.js",
         ]
       },
       {
@@ -136,7 +137,6 @@ module.exports = {
 /*
 ** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
-** "src/Loading/Loading.js"
 ** "src/TooltipDefinition/TooltipDefinition.js",
 ** "src/TooltipSimple/TooltipSimple.js",
 ** "src/Copy/Copy.js",
