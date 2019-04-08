@@ -1,11 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import MultiSelect from '../MultiSelect';
 
-export default (
-<MultiSelect 
-  uxpId="1"
-  label="Hello"
-  items={[
+const items = [
     {
         "label": "Option 1",
         "value": "Option 1",
@@ -15,6 +11,19 @@ export default (
         "label": "Option 2",
         "value": "Option 2",
         "field": "Option 2"
-    }
-]} />
+    },
+];
+
+export default (
+    <MultiSelect
+        items={items}
+        placeholder="MultiSelect Label"
+        type="default"
+        label="MultiSelect Label"
+        invalidText="Invalid Selection"
+        listBoxMenuIconTranslationIds={{
+            'close.menu': 'Close menu',
+            'open.menu': 'Open menu',
+        }}
+    />
 );

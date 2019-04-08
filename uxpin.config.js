@@ -117,6 +117,7 @@ module.exports = {
         name: "Modal",
         include: [
           "src/ComposedModal/ComposedModal.js",
+          "src/Modal/Modal.js",
         ],
       },
       {
