@@ -1,6 +1,11 @@
-import * as React from "react";
+import React from "react";
 import FileUploader from "../FileUploader";
 
 export default (
-<FileUploader buttonLabel="Upload Files" buttonKind="secondary" multiple={true} uxpId="1" />
+    <FileUploader
+        buttonLabel="Upload Files"
+        buttonKind="secondary"
+        multiple
+        uxpId="FileUploader0"
+    />
 );
