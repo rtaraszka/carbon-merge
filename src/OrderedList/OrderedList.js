@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { OrderedList as OrderedListM } from "carbon-components-react";
+import { OrderedList as OrderedListComponent } from "carbon-components-react";
 
 function OrderedList(props) {
-  return <OrderedListM {...props}>{props.children}</OrderedListM>;
+  return (
+      <OrderedListComponent {...props} />
+  );
 }
 
 OrderedList.propTypes = {
@@ -23,4 +25,8 @@ OrderedList.propTypes = {
   nested: PropTypes.bool,
 };
 
-export { OrderedList as default };
+OrderedList.defaultProps = {
+  nested: false,
+};
+
+export default OrderedList;
