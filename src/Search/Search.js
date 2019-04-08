@@ -48,4 +48,4 @@ Search.propTypes = {
     light: PropTypes.bool,
 };
 
-export { Search as default };
+export default Search;

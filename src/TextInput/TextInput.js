@@ -83,7 +83,7 @@ TextInput.propTypes = {
   /**
    * `true` to use the light version.
    */
-  light: PropTypes.bool, 
+  light: PropTypes.bool,
 };
 
-export { TextInput as default };
+export default TextInput;

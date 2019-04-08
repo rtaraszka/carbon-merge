@@ -118,6 +118,15 @@ module.exports = {
           "src/ComposedModal/ComposedModal.js",
         ],
       },
+      {
+        name: "Form",
+        include: [
+          "src/Form/Form.js",
+          "src/FormItem/FormItem.js",
+          "src/FormLabel/FormLabel.js",
+          "src/FormGroup/FormGroup.js",
+        ],
+      },
     ]
   },
   name: "IBM Carbon"

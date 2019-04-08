@@ -92,4 +92,4 @@ TextArea.propTypes = {
   light: PropTypes.bool,
 };
 
-export { TextArea as default };
+export default TextArea;

@@ -53,6 +53,7 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | DataPicker | 🔶 Partial support. Only `simple` mode work. |
 | Dropdown | 🔻 Not Supported. Issueas with `React.cloneElement()` |
 | FileUploader | ✅ Full Support |
+| Form | ✅ Full Support |
 | Icon | ✅ Full Support |
 | InlineLoading | ✅ Full Support |
 | Link | ✅ Full Support |

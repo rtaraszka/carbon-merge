@@ -55,4 +55,4 @@ RadioButton.propTypes = {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-export { RadioButton as default };
+export default RadioButton;

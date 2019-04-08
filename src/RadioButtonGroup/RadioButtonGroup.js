@@ -44,4 +44,4 @@ RadioButtonGroup.propTypes = {
   valueSelected: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-export { RadioButtonGroup as default };
+export default RadioButtonGroup;

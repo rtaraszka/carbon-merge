@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { NumberInput as NumberInputM } from "carbon-components-react";
+import { NumberInput as NumberInputComponent } from "carbon-components-react";
 
 function NumberInput(props) {
-  return <NumberInputM {...props} />;
+  return <NumberInputComponent {...props} />;
 }
 
 NumberInput.propTypes = {
@@ -92,7 +92,7 @@ NumberInput.propTypes = {
     /**
      * `true` to allow empty string.
      */
-    allowEmpty: PropTypes.bool, 
+    allowEmpty: PropTypes.bool,
 };
 
-export { NumberInput as default };
+export default NumberInput;
