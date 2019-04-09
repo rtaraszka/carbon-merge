@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ProgressIndicator as ProgressIndicatorM } from "carbon-components-react";
+import { ProgressIndicator as ProgressIndicatorComponent } from "carbon-components-react";
 
 function ProgressIndicator(props) {
-  return <ProgressIndicatorM {...props}>{props.children}</ProgressIndicatorM>;
+  return (
+      <ProgressIndicatorComponent {...props} />
+  );
 }
 
 ProgressIndicator.propTypes = {
@@ -21,7 +23,12 @@ ProgressIndicator.propTypes = {
   /**
    * Optionally specify the current step array index
    */
-  currentIndex: PropTypes.number
+  currentIndex: PropTypes.number,
+
+  /**
+   * Optional callback called if a ProgressStep is clicked on.  Returns the index of the step.
+   */
+  onChange: PropTypes.func,
 };
 
-export { ProgressIndicator as default };
+export default ProgressIndicator;
