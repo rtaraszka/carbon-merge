@@ -1,13 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Search as SearchM } from "carbon-components-react";
+import { Search as SearchComponent } from "carbon-components-react";
 
 function Search(props) {
-  return <SearchM {...props} />;
+  return (
+      <SearchComponent {...props} />
+  );
 }
 
 Search.propTypes = {
-     /**
+    /**
      * Specify an optional className to be applied to the container node
      */
     className: PropTypes.string,
@@ -30,7 +32,7 @@ Search.propTypes = {
     /**
      * Provide an optional label text for the Search icon
      */
-    labelText: PropTypes.node,
+    labelText: PropTypes.node.isRequired,
 
     /**
      * Specify a custom `id` for the input
@@ -46,6 +48,23 @@ Search.propTypes = {
      * `true` to use the light version.
      */
     light: PropTypes.bool,
+
+    /**
+     * Specify the value of the <input>
+     */
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+
+    /**
+     * Optionally provide the default value of the <input>
+     */
+    defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
+
+Search.defaultProps = {
+    type: 'text',
+    small: false,
+    placeHolderText: '',
+    light: false,
 };
 
 export default Search;

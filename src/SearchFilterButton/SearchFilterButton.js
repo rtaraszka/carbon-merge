@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SearchFilterButton as SearchFilterButtonM } from "carbon-components-react";
+import { SearchFilterButton as SearchFilterButtonComponent } from "carbon-components-react";
 
 function SearchFilterButton(props) {
-  return <SearchFilterButtonM {...props} style={{"marginLeft": 0}} />;
+  return <SearchFilterButtonComponent {...props} />;
 }
 
 SearchFilterButton.propTypes = {
@@ -18,4 +18,4 @@ SearchFilterButton.propTypes = {
   iconDescription: PropTypes.string
 };
 
-export { SearchFilterButton as default };
+export default SearchFilterButton;
