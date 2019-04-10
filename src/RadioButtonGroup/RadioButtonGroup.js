@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { RadioButtonGroup as RadioButtonGroupM } from "carbon-components-react";
+import { RadioButtonGroup as RadioButtonGroupComponent } from "carbon-components-react";
 
 function RadioButtonGroup(props) {
-  return <RadioButtonGroupM {...props}>{props.children}</RadioButtonGroupM>;
+  return (
+      <RadioButtonGroupComponent {...props} />
+  );
 }
 
 RadioButtonGroup.propTypes = {
@@ -25,7 +27,7 @@ RadioButtonGroup.propTypes = {
   /**
    * Specify the name of the underlying <input> nodes
    */
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 
   /**
    * Specify whether the group is disabled
@@ -41,7 +43,7 @@ RadioButtonGroup.propTypes = {
   /**
    * Specify the value that is currently selected in the group
    */
-  valueSelected: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  valueSelected: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default RadioButtonGroup;

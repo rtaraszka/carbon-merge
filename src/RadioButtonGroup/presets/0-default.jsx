@@ -1,11 +1,26 @@
-import * as React from "react";
+import React from "react";
 import RadioButtonGroup from "../RadioButtonGroup";
 import RadioButton from "../../RadioButton/RadioButton";
 
+const radioProps = {
+    className: 'some-class',
+    labelText: 'Radio button label',
+};
+
 export default (
-<RadioButtonGroup defaultSelected="react.js" name="JavaScript" uxpId="1">
-  <RadioButton labelText="React.js" value="react.js" uxpId="2" />
-  <RadioButton labelText="Angular" value="angular" uxpId="3" />
-  <RadioButton labelText="Vue.js" value="vue" uxpId="4" />
-</RadioButtonGroup>
+    <RadioButtonGroup
+        defaultSelected="default-selected"
+        legend="Group Legend"
+        name="radio-button-group"
+        valueSelected="default-selected"
+        uxpId="RadioButtonGroup0">
+      <RadioButton value="standard" id="radio-1" {...radioProps} uxpId="RadioButton0" />
+      <RadioButton
+          value="default-selected"
+          id="radio-2"
+          {...radioProps}
+          uxpId="RadioButton1"
+      />
+      <RadioButton value="disabled" id="radio-3" {...radioProps} uxpId="RadioButton2" />
+    </RadioButtonGroup>
 );
