@@ -1,6 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import Tag from '../Tag';
 
 export default (
-  <Tag type="beta" uxpId="1">Merge!</Tag>
+    <Tag
+        className="some-class"
+        type="experimental"
+        uxpId="Tag0">
+        This is not a tag
+    </Tag>
 );

@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Tag as TagM } from "carbon-components-react";
+import { Tag as TagComponent } from "carbon-components-react";
 
 function Tag(props) {
-  return <TagM {...props}>{props.children}</TagM>;
+  return (
+      <TagComponent {...props} />
+  );
 }
 
 Tag.propTypes = {
@@ -43,4 +45,4 @@ Tag.propTypes = {
   ])
 };
 
-export { Tag as default };
+export default Tag;
