@@ -12,6 +12,7 @@ module.exports = {
           "src/CopyButton/CopyButton.js",
           "src/Loading/Loading.js",
           "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
+          "src/SkeletonText/SkeletonText.js",
         ]
       },
       {
