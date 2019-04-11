@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 import ToolbarDivider from "../ToolbarDivider";
 
 export default (
-<ToolbarDivider uxpId="1"/>
+    <ToolbarDivider uxpId="ToolbarDivider0"/>
 );

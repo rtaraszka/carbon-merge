@@ -1,23 +1,41 @@
-import * as React from "react";
+import React from "react";
 import ToolbarItem from "../../ToolbarItem/ToolbarItem";
 import OverflowMenu from "../../OverflowMenu/OverflowMenu";
 import ToolbarTitle from "../../ToolbarTitle/ToolbarTitle";
 import ToolbarOption from "../../ToolbarOption/ToolbarOption";
-import Checkbox from "../../Checkbox/Checkbox";
+import OverflowMenuItem from "../../OverflowMenuItem/OverflowMenuItem";
+import ToolbarDivider from "../../ToolbarDivider/ToolbarDivider";
+import RadioButton from "../../RadioButton/RadioButton";
 
+const inputProps = {
+  className: 'some-class',
+};
 
 export default (
-  <ToolbarItem uxpId="2452144221">
-    <OverflowMenu floatingMenu uxpId="405767754">
-      <ToolbarTitle title="FILTER BY" uxpId="2153764633" />
-      <ToolbarOption uxpId="3779960379">
-        <Checkbox id="opt-1" labelText="Filter option 1" uxpId="2452086573" />
+  <ToolbarItem uxpId="ToolbarItem2">
+    <OverflowMenu floatingMenu uxpId="OverflowMenu1">
+      <OverflowMenuItem itemText="Refresh table" uxpId="OverflowMenuItem1" />
+      <ToolbarDivider uxpId="ToolbarDivider0" />
+      <ToolbarTitle title="ROW HEIGHT" uxpId="ToolbarTile1" />
+      <ToolbarOption uxpId="ToolbarOption3">
+        <RadioButton
+            {...inputProps}
+            value="short"
+            id="radio-1"
+            name="toolbar-radio"
+            labelText="Short"
+            uxpId="RadioButton0"
+        />
       </ToolbarOption>
-      <ToolbarOption uxpId="1625786894">
-        <Checkbox id="opt-2" labelText="Filter option 2" uxpId="2517957463" />
-      </ToolbarOption>
-      <ToolbarOption uxpId="4200745090">
-        <Checkbox id="opt-3" labelText="Filter option 3" uxpId="1702486876" />
+      <ToolbarOption uxpId="ToolbarOption4">
+        <RadioButton
+            {...inputProps}
+            value="tall"
+            id="radio-2"
+            name="toolbar-radio"
+            labelText="Tall"
+            uxpId="RadioButton1"
+        />
       </ToolbarOption>
     </OverflowMenu>
   </ToolbarItem>

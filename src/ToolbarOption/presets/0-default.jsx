@@ -1,9 +1,20 @@
-import * as React from "react";
+import React from "react";
 import ToolbarOption from "../../ToolbarOption/ToolbarOption";
-import Checkbox from "../../Checkbox/Checkbox";
+import RadioButton from "../../RadioButton/RadioButton";
+
+const inputProps = {
+  className: 'some-class',
+};
 
 export default (
-<ToolbarOption uxpId="3779960379">
-  <Checkbox id="opt-1" labelText="Filter option 1" uxpId="2452086573" />
-</ToolbarOption>
+    <ToolbarOption uxpId="ToolbarOption3">
+      <RadioButton
+          {...inputProps}
+          value="short"
+          id="radio-1"
+          name="toolbar-radio"
+          labelText="Short"
+          uxpId="RadioButton0"
+      />
+    </ToolbarOption>
 );

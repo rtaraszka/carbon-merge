@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Toolbar as ToolbarM } from "carbon-components-react";
+import { Toolbar as ToolbarComponent } from "carbon-components-react";
 
 function Toolbar(props) {
-  return <ToolbarM {...props}>{props.children}</ToolbarM>;
+  return (
+      <ToolbarComponent {...props} />
+  );
 }
 
 Toolbar.propTypes = {
@@ -18,4 +20,4 @@ Toolbar.propTypes = {
   className: PropTypes.string
 };
 
-export { Toolbar as default };
+export default Toolbar;
