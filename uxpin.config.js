@@ -131,6 +131,16 @@ module.exports = {
           "src/FormGroup/FormGroup.js",
         ],
       },
+      {
+        name: "StructuredListCell",
+        include: [
+          "src/StructuredListWrapper/StructuredListWrapper.js",
+          "src/StructuredListHead/StructuredListHead.js",
+          "src/StructuredListBody/StructuredListBody.js",
+          "src/StructuredListRow/StructuredListRow.js",
+          "src/StructuredListCell/StructuredListCell.js",
+        ],
+      },
     ]
   },
   name: "IBM Carbon"

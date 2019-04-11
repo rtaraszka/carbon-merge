@@ -71,6 +71,8 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | Search | ✅ Full Support |
 | Select | ✅ Full Support |
 | Slider | ✅ Full Support |
+| SkeletonPlaceholder | ✅ Full Support |
+| SkeletonText | ✅ Full Support |
 | StructuredList | ✅ Full Support |
 | Table | ✅ Full Support |
 | Tabs | ✅ Full Support |
