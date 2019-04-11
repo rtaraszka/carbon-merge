@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TableRow as TableRowM } from "carbon-components-react";
+import { TableRow as TableRowComponent } from "carbon-components-react";
 
 function TableRow(props) {
-  return <TableRowM {...props}>{props.children}</TableRowM>;
+  return (
+      <TableRowComponent {...props} />
+  );
 }
 
 TableRow.propTypes = {
@@ -28,4 +30,4 @@ TableRow.propTypes = {
   even: PropTypes.bool
 };
 
-export { TableRow as default };
+export default TableRow;

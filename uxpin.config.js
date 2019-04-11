@@ -93,7 +93,6 @@ module.exports = {
       {
         name: "Table",
         include: [
-          "src/DataTable/DataTable.js",
           "src/Table/Table.js",
           "src/TableRow/TableRow.js",
           "src/TableHead/TableHead.js",
