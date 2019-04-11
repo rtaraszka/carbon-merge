@@ -13,6 +13,7 @@ module.exports = {
           "src/Loading/Loading.js",
           "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
           "src/SkeletonText/SkeletonText.js",
+          "src/Tile/Tile.js",
         ]
       },
       {
@@ -56,8 +57,6 @@ module.exports = {
           "src/ListItem/ListItem.js",
           "src/SelectItem/SelectItem.js",
           "src/SelectItemGroup/SelectItemGroup.js",
-          "src/RadioTile/RadioTile.js",
-          "src/TileGroup/TileGroup.js",
           "src/Slider/Slider.js",
           "src/TimePicker/TimePicker.js",
           "src/TimePickerSelect/TimePickerSelect.js",
