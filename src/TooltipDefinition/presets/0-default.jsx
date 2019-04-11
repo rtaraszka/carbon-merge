@@ -1,14 +1,14 @@
-import * as React from "react";
+import React from "react";
 import TooltipDefinition from "../TooltipDefinition";
 
 export default (
-<TooltipDefinition
-  uxpId="1"
-  className="tooltip--class"
-  triggerClassName="tooltip--trigger-class"
-  triggerText="Tooltip Definition"
-  direction="bottom"
->
-  Tooltip Definition label
-</TooltipDefinition>
+  <TooltipDefinition
+    uxpId="TooltipDefinition0"
+    className="tooltip--class"
+    triggerClassName="tooltip--trigger-class"
+    triggerText="Tooltip Definition"
+    direction="bottom"
+    tooltipText="Brief description of the dotted, underlined word above.">
+    Tooltip Definition label
+  </TooltipDefinition>
 );

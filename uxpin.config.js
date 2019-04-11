@@ -86,6 +86,8 @@ module.exports = {
           "src/ProgressStep/ProgressStep.js",
           "src/InlineLoading/InlineLoading.js",
           "src/Tooltip/Tooltip.js",
+          "src/TooltipDefinition/TooltipDefinition.js",
+          "src/TooltipIcon/TooltipIcon.js",
           "src/Tag/Tag.js",
         ]
       },
