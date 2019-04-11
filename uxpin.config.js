@@ -11,6 +11,7 @@ module.exports = {
           "src/FileUploader/FileUploader.js",
           "src/CopyButton/CopyButton.js",
           "src/Loading/Loading.js",
+          "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
         ]
       },
       {
