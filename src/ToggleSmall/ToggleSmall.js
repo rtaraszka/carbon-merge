@@ -1,32 +1,31 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ToggleSmall as ToggleSmallM } from "carbon-components-react";
+import { ToggleSmall as ToggleSmallComponent } from "carbon-components-react";
 
-export default class ToggleSmall extends React.Component {
+class ToggleSmall extends Component {
   constructor(props) {
-    super();
+    super(props);
 
     this.state = {
-      toggled: false
+      toggled: props.toggled,
     };
+
+    this.handleToggle = this.handleToggle.bind(this);
   }
 
-  handleClick() {
-    if (this.state.toggled === false) {
-      this.setState({ toggled: true });
-    } else {
-      this.setState({ toggled: false });
-    }
+  handleToggle(event) {
+    this.setState({ toggled: !this.state.toggled });
+    this.props.handleToggle(event);
   }
 
   render() {
     return (
-      <ToggleSmallM
-        {...this.props}
-        toggled={this.state.toggled}
-        onChange={e => this.handleClick('', "toggle-merge", e)}
-        onToggle={e => this.handleClick('', "toggle-merge", e)}
-      />
+        <ToggleSmallComponent
+            {...this.props}
+            id="toggle-merge"
+            toggled={this.state.toggled}
+            onToggle={this.handleToggle}
+        />
     );
   }
 }
@@ -67,3 +66,12 @@ ToggleSmall.propTypes = {
    */
   labelB: PropTypes.string
 };
+
+ToggleSmall.defaultProps = {
+  defaultToggled: false,
+  label: '',
+  labelA: 'Off',
+  labelB: 'On',
+};
+
+export default ToggleSmall;
