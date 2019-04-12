@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { UnorderedList as UnorderedListM } from "carbon-components-react";
+import { UnorderedList as UnorderedListComponent } from "carbon-components-react";
 
 function UnorderedList(props) {
-  return <UnorderedListM {...props}>{props.children}</UnorderedListM>;
+  return (
+      <UnorderedListComponent {...props} />
+  );
 }
 
 UnorderedList.propTypes = {
@@ -23,4 +25,8 @@ UnorderedList.propTypes = {
   nested: PropTypes.bool,
 };
 
-export { UnorderedList as default };
+UnorderedList.defaultProps = {
+  nested: false,
+};
+
+export default UnorderedList;
