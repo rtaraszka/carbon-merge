@@ -113,4 +113,4 @@ MultiSelect.defaultProps = {
  open: false,
 };
 
-export default MultiSelectComponent;
+export default MultiSelect;
