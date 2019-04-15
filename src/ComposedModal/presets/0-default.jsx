@@ -29,6 +29,7 @@ export default (
             secondaryButtonText: '',
             children: '',
         }}
+        open
         uxpId="ComposedModal0">
     </ComposedModal>
 );
