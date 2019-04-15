@@ -103,19 +103,6 @@ module.exports = {
         ]
       },
       {
-        name: "Header",
-        include: [
-          "src/Header/Header/Header.js",
-          "src/Header/HeaderGlobalAction/HeaderGlobalAction.js",
-          "src/Header/HeaderGlobalBar/HeaderGlobalBar.js",
-          "src/Header/HeaderMenu/HeaderMenu.js",
-          "src/Header/HeaderMenuButton/HeaderMenuButton.js",
-          "src/Header/HeaderMenuItem/HeaderMenuItem.js",
-          "src/Header/HeaderName/HeaderName.js",
-          "src/Header/HeaderNavigation/HeaderNavigation.js",
-        ]
-      },
-      {
         name: "Modal",
         include: [
           "src/ComposedModal/ComposedModal.js",
@@ -171,19 +158,5 @@ module.exports = {
 /*
 ** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
-** "src/TooltipDefinition/TooltipDefinition.js",
-** "src/TooltipSimple/TooltipSimple.js",
 ** "src/Copy/Copy.js",
-** "src/SideNav/SideNav/SideNav.js",
-** "src/SideNav/SideNavDetails/SideNavDetails.js",
-** "src/SideNav/SideNavFooter/SideNavFooter.js",
-** "src/SideNav/SideNavHeader/SideNavHeader.js",
-** "src/SideNav/SideNavIcon/SideNavIcon.js",
-** "src/SideNav/SideNavItem/SideNavItem.js",
-** "src/SideNav/SideNavItems/SideNavItems.js",
-** "src/SideNav/SideNavLink/SideNavLink.js",
-** "src/SideNav/SideNavLinkText/SideNavLinkText.js",
-** "src/SideNav/SideNavMenu/SideNavMenu.js",
-** "src/SideNav/SideNavMenuItem/SideNavMenuItem.js",
-** "src/SideNav/SideNavSwitcher/SideNavSwitcher.js"
 */
