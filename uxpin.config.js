@@ -141,6 +141,27 @@ module.exports = {
           "src/StructuredListCell/StructuredListCell.js",
         ],
       },
+      {
+        name: "UI Shell",
+        include: [
+          "src/UIShell/UIShellHeader/UIShellHeader.js",
+          "src/UIShell/UIShellHeaderGlobalBar/UIShellHeaderGlobalBar.js",
+          "src/UIShell/UIShellHeaderGlobalAction/UIShellHeaderGlobalAction.js",
+          "src/UIShell/UIShellHeaderName/UIShellHeaderName.js",
+          "src/UIShell/UIShellHeaderMenuButton/UIShellHeaderMenuButton.js",
+          "src/UIShell/UIShellHeaderMenu/UIShellHeaderMenu.js",
+          "src/UIShell/UIShellHeaderMenuItem/UIShellHeaderMenuItem.js",
+          "src/UIShell/UIShellHeaderNavigation/UIShellHeaderNavigation.js",
+          "src/UIShell/UIShellSideNav/UIShellSideNav.js",
+          "src/UIShell/UIShellSideNavHeader/UIShellSideNavHeader.js",
+          "src/UIShell/UIShellSideNavDetails/UIShellSideNavDetails.js",
+          "src/UIShell/UIShellSideNavSwitcher/UIShellSideNavSwitcher.js",
+          "src/UIShell/UIShellSideNavItems/UIShellSideNavItems.js",
+          "src/UIShell/UIShellSideNavLink/UIShellSideNavLink.js",
+          "src/UIShell/UIShellSideNavMenu/UIShellSideNavMenu.js",
+          "src/UIShell/UIShellSideNavMenuItem/UIShellSideNavMenuItem.js",
+        ],
+      },
     ]
   },
   name: "IBM Carbon"

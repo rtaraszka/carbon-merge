@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Icon as IconComponent } from "carbon-components-react";
 import * as Icons from "carbon-icons/dist/carbon-icons.js";
 
-
 const ICONS = [
   "iconAdd",
   "iconAddGlyph",
