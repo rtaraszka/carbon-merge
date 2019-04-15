@@ -4,7 +4,7 @@ import Tag from '../Tag';
 export default (
     <Tag
         className="some-class"
-        type="experimental"
+        type="red"
         uxpId="Tag0">
         This is not a tag
     </Tag>
