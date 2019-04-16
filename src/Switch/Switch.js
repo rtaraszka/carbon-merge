@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Switch as SwitchM } from "carbon-components-react";
+import { Switch as SwitchComponent } from "carbon-components-react";
 
 function Switch(props) {
   return (
-    <SwitchM {...props} />
+    <SwitchComponent {...props} />
   );
 }
 
@@ -64,4 +64,4 @@ Switch.propTypes = {
   href: PropTypes.string,
 };
 
-export { Switch as default };
+export default Switch;

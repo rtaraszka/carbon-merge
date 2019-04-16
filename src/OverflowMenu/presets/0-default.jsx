@@ -10,6 +10,7 @@ export default (
     <OverflowMenu
         floatingMenu
         direction="bottom"
+        open
         uxpId="OverflowMenu0">
         <OverflowMenuItem
             {...overflowMenuItemProps}

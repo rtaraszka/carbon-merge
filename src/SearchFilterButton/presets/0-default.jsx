@@ -1,10 +1,10 @@
-import * as React from "react";
+import React from "react";
 import SearchFilterButton from "../SearchFilterButton";
 
 export default (
-<SearchFilterButton
-  uxpId="1"
-  label="Filter"
-  labelText="Filter"
-/>
+    <SearchFilterButton
+      uxpId="1"
+      label="Filter"
+      labelText="Filter"
+    />
 );
