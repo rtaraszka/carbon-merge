@@ -91,6 +91,7 @@ module.exports = {
           "src/CodeSnippetSkeleton/CodeSnippetSkeleton.js",
           "src/Pagination/Pagination.js",
           "src/ProgressIndicator/ProgressIndicator.js",
+          "src/ProgressIndicatorSkeleton/ProgressIndicatorSkeleton.js",
           "src/ProgressStep/ProgressStep.js",
           "src/InlineLoading/InlineLoading.js",
           "src/Tooltip/Tooltip.js",
