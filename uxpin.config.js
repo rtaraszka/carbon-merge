@@ -139,6 +139,7 @@ module.exports = {
           "src/StructuredListBody/StructuredListBody.js",
           "src/StructuredListRow/StructuredListRow.js",
           "src/StructuredListCell/StructuredListCell.js",
+          "src/StructuredListSkeleton/StructuredListSkeleton.js",
         ],
       },
       {
