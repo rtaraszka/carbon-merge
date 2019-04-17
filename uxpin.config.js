@@ -78,6 +78,7 @@ module.exports = {
         include: [
           "src/Accordion/Accordion.js",
           "src/AccordionItem/AccordionItem.js",
+          "src/AccordionSkeleton/AccordionSkeleton.js",
           "src/OrderedList/OrderedList.js",
           "src/UnorderedList/UnorderedList.js",
           "src/CodeSnippet/CodeSnippet.js",
