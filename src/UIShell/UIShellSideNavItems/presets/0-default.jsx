@@ -6,7 +6,10 @@ import UIShellSideNavMenu from "../../UIShellSideNavMenu/UIShellSideNavMenu";
 
 export default (
     <UIShellSideNavItems uxpId="UIShellSideNavItems0">
-        <UIShellSideNavLink iconName="iconUser" href="javascript:void(0)" uxpId="UIShellSideNavLink0">
+        <UIShellSideNavLink
+            iconName="iconUser"
+            href="javascript:void(0)"
+            uxpId="UIShellSideNavLink0">
             Link
         </UIShellSideNavLink>
         <UIShellSideNavMenu
@@ -16,7 +19,10 @@ export default (
             title="Category title"
             uxpId="UIShellSideNavMenu0">
             <UIShellSideNavMenuItem href="javascript:void(0)" uxpId="UIShellSideNavMenuItem0">Link</UIShellSideNavMenuItem>
-            <UIShellSideNavMenuItem aria-current="page" href="javascript:void(0)" uxpId="UIShellSideNavMenuItem1">
+            <UIShellSideNavMenuItem
+                aria-current="page"
+                href="javascript:void(0)"
+                uxpId="UIShellSideNavMenuItem1">
                 Link
             </UIShellSideNavMenuItem>
             <UIShellSideNavMenuItem href="javascript:void(0)" uxpId="UIShellSideNavMenuItem2">Link</UIShellSideNavMenuItem>

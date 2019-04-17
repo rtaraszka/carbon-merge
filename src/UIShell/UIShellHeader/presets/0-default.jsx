@@ -15,7 +15,10 @@ export default (
             aria-label="Open menu"
             uxpId="UIShellHeaderMenuButton0"
         />
-        <UIShellHeaderName href="#" prefix="IBM" uxpId="UIShellHeaderName0">
+        <UIShellHeaderName
+            href="#"
+            prefix="IBM"
+            uxpId="UIShellHeaderName0">
             [Platform]
         </UIShellHeaderName>
         <UIShellHeaderNavigation aria-label="IBM [Platform]" uxpId="UIShellHeaderNavigation0">

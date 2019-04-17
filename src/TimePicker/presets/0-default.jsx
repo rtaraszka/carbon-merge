@@ -18,13 +18,35 @@ export default (
     invalidText="A valid value is required"
     maxLength={5}
     uxpId="TimePicker0">
-    <TimePickerSelect id="time-picker-select-1" {...selectProps} uxpId="TimePickerSelect0">
-      <SelectItem value="AM" text="AM" uxpId="SelectItem0" />
-      <SelectItem value="PM" text="PM" uxpId="SelectItem1" />
+    <TimePickerSelect
+        {...selectProps}
+        id="time-picker-select-1"
+        uxpId="TimePickerSelect0">
+      <SelectItem
+          value="AM"
+          text="AM"
+          uxpId="SelectItem0"
+      />
+      <SelectItem
+          value="PM"
+          text="PM"
+          uxpId="SelectItem1"
+      />
     </TimePickerSelect>
-    <TimePickerSelect id="time-picker-select-2" {...selectProps} uxpId="TimePickerSelect1">
-      <SelectItem value="Time zone 1" text="Time zone 1" uxpId="SelectItem2" />
-      <SelectItem value="Time zone 2" text="Time zone 2" uxpId="SelectItem3" />
+    <TimePickerSelect
+        {...selectProps}
+        id="time-picker-select-2"
+        uxpId="TimePickerSelect1">
+      <SelectItem
+          value="Time zone 1"
+          text="Time zone 1"
+          uxpId="SelectItem2"
+      />
+      <SelectItem
+          value="Time zone 2"
+          text="Time zone 2"
+          uxpId="SelectItem3"
+      />
     </TimePickerSelect>
   </TimePicker>
 );

@@ -117,16 +117,39 @@ const buttonEvents = {
 export default (
     <Form {...additionalProps} uxpId="Form0">
         <FormGroup {...fieldsetCheckboxProps} uxpId="FormGroup0">
-            <Checkbox defaultChecked {...checkboxEvents} id="checkbox-0" uxpId="Checkbox0" />
-            <Checkbox {...checkboxEvents} id="checkbox-1" uxpId="Checkbox1" />
-            <Checkbox disabled {...checkboxEvents} id="checkbox-2" uxpId="Checkbox2" />
+            <Checkbox
+                {...checkboxEvents}
+                defaultChecked
+                id="checkbox-0"
+                uxpId="Checkbox0"
+            />
+            <Checkbox
+                {...checkboxEvents}
+                id="checkbox-1"
+                uxpId="Checkbox1"
+            />
+            <Checkbox
+                {...checkboxEvents}
+                disabled
+                id="checkbox-2"
+                uxpId="Checkbox2"
+            />
         </FormGroup>
 
         <NumberInput {...numberInputProps} uxpId="NumberInput0" />
 
         <FormGroup {...fieldsetToggleProps} uxpId="FormGroup1">
-            <Toggle {...toggleProps} id="toggle-1" uxpId="Toggle0" />
-            <Toggle disabled {...toggleProps} id="toggle-2" uxpId="Toggle1" />
+            <Toggle
+                {...toggleProps}
+                id="toggle-1"
+                uxpId="Toggle0"
+            />
+            <Toggle
+                {...toggleProps}
+                disabled
+                id="toggle-2"
+                uxpId="Toggle1"
+            />
         </FormGroup>
 
         <FormGroup {...fieldsetFileUploaderProps} uxpId="FormGroup2">
@@ -144,32 +167,32 @@ export default (
                 defaultSelected="default-selected"
                 uxpId="RadioButtonGroup0">
                 <RadioButton
+                    {...radioProps}
                     value="standard"
                     id="radio-1"
                     labelText="Standard Radio Button"
-                    {...radioProps}
                     uxpId="RadioButton0"
                 />
                 <RadioButton
+                    {...radioProps}
                     value="default-selected"
                     labelText="Default Selected Radio Button"
                     id="radio-2"
-                    {...radioProps}
                     uxpId="RadioButton1"
                 />
                 <RadioButton
+                    {...radioProps}
                     value="blue"
                     labelText="Standard Radio Button"
                     id="radio-3"
-                    {...radioProps}
                     uxpId="RadioButton2"
                 />
                 <RadioButton
+                    {...radioProps}
                     value="disabled"
                     labelText="Disabled Radio Button"
                     id="radio-4"
                     disabled
-                    {...radioProps}
                     uxpId="RadioButton3"
                 />
             </RadioButtonGroup>
@@ -185,7 +208,11 @@ export default (
             />
         </FormGroup>
 
-        <Select {...selectProps} id="select-1" defaultValue="placeholder-item" uxpId="Select0">
+        <Select
+            {...selectProps}
+            id="select-1"
+            defaultValue="placeholder-item"
+            uxpId="Select0">
             <SelectItem
                 disabled
                 hidden
@@ -193,32 +220,48 @@ export default (
                 text="Choose an option"
                 uxpId="SelectItem0"
             />
-            <SelectItem value="option-1" text="Option 1" uxpId="SelectItem1" />
-            <SelectItem value="option-2" text="Option 2" uxpId="SelectItem2" />
-            <SelectItem value="option-3" text="Option 3" uxpId="SelectItem3" />
+            <SelectItem
+                value="option-1"
+                text="Option 1"
+                uxpId="SelectItem1"
+            />
+            <SelectItem
+                value="option-2"
+                text="Option 2"
+                uxpId="SelectItem2"
+            />
+            <SelectItem
+                value="option-3"
+                text="Option 3"
+                uxpId="SelectItem3"
+            />
         </Select>
 
         <TextInput {...TextInputProps} uxpId="TextInput0" />
 
         <TextInput
+            {...PasswordProps}
             type="password"
             required
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-            {...PasswordProps}
             uxpId="TextInput1"
         />
 
         <TextInput
+            {...InvalidPasswordProps}
             type="password"
             required
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-            {...InvalidPasswordProps}
             uxpId="TextInput2"
         />
 
         <TextArea {...textareaProps} uxpId="TextArea0"  />
 
-        <Button type="submit" className="some-class" {...buttonEvents} uxpId="Button0">
+        <Button
+            {...buttonEvents}
+            type="submit"
+            className="some-class"
+            uxpId="Button0">
             Submit
         </Button>
     </Form>

@@ -25,6 +25,10 @@ const items = [
 ];
 
 export default (
-  <ComboBox items={items} placeholder="Filter..." uxpId="ComboBox0" />
+  <ComboBox
+      items={items}
+      placeholder="Filter..."
+      uxpId="ComboBox0"
+  />
 );
 

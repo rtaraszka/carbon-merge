@@ -14,13 +14,23 @@ export default (
         name="radio-button-group"
         valueSelected="default-selected"
         uxpId="RadioButtonGroup0">
-      <RadioButton value="standard" id="radio-1" {...radioProps} uxpId="RadioButton0" />
+      <RadioButton
+          {...radioProps}
+          value="standard"
+          id="radio-1"
+          uxpId="RadioButton0"
+      />
       <RadioButton
           value="default-selected"
           id="radio-2"
           {...radioProps}
           uxpId="RadioButton1"
       />
-      <RadioButton value="disabled" id="radio-3" {...radioProps} uxpId="RadioButton2" />
+      <RadioButton
+          {...radioProps}
+          value="disabled"
+          id="radio-3"
+          uxpId="RadioButton2"
+      />
     </RadioButtonGroup>
 );

@@ -24,8 +24,16 @@ export default (
             requireTitle
             uxpId="OverflowMenuItem1"
         />
-        <OverflowMenuItem {...overflowMenuItemProps} itemText="Option 3" uxpId="OverflowMenuItem2" />
-        <OverflowMenuItem {...overflowMenuItemProps} itemText="Option 4" uxpId="OverflowMenuItem3" />
+        <OverflowMenuItem
+            {...overflowMenuItemProps}
+            itemText="Option 3"
+            uxpId="OverflowMenuItem2"
+        />
+        <OverflowMenuItem
+            {...overflowMenuItemProps}
+            itemText="Option 4"
+            uxpId="OverflowMenuItem3"
+        />
         <OverflowMenuItem
             {...overflowMenuItemProps}
             itemText="Option 5"

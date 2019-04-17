@@ -16,18 +16,43 @@ const inputProps = {
 
 export default (
   <Toolbar className="some-class" uxpId="Toolbar0">
-    <ToolbarItem type="search" placeHolderText="Search" uxpId="ToolbarItem0" />
+    <ToolbarItem
+        type="search"
+        placeHolderText="Search"
+        uxpId="ToolbarItem0"
+    />
     <ToolbarItem uxpId="ToolbarItem1">
-      <OverflowMenu icon={iconFilter} floatingMenu uxpId="OverflowMenu0">
-        <ToolbarTitle title="FILTER BY" uxpId="ToolbarTile0" />
+      <OverflowMenu
+          icon={iconFilter}
+          floatingMenu
+          uxpId="OverflowMenu0">
+        <ToolbarTitle
+            title="FILTER BY"
+            uxpId="ToolbarTile0"
+        />
         <ToolbarOption uxpId="ToolbarOption0">
-          <Checkbox {...inputProps} id="opt-1" labelText="Filter option 1" uxpId="Checkbox0" />
+          <Checkbox
+              {...inputProps}
+              id="opt-1"
+              labelText="Filter option 1"
+              uxpId="Checkbox0"
+          />
         </ToolbarOption>
         <ToolbarOption uxpId="ToolbarOption1">
-          <Checkbox {...inputProps} id="opt-2" labelText="Filter option 2" uxpId="Checkbox1" />
+          <Checkbox
+              {...inputProps}
+              id="opt-2"
+              labelText="Filter option 2"
+              uxpId="Checkbox1"
+          />
         </ToolbarOption>
         <ToolbarOption uxpId="ToolbarOption2">
-          <Checkbox {...inputProps} id="opt-3" labelText="Filter option 3" uxpId="Checkbox2" />
+          <Checkbox
+              {...inputProps}
+              id="opt-3"
+              labelText="Filter option 3"
+              uxpId="Checkbox2"
+          />
         </ToolbarOption>
       </OverflowMenu>
     </ToolbarItem>

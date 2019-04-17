@@ -19,7 +19,10 @@ export default (
             aliquip ex ea commodo consequat.
         </AccordionItem>
         <AccordionItem title="Section 3 title" uxpId="AccordionItem2">
-            <Select id="select-1" defaultValue="placeholder-item" uxpId="Select0">
+            <Select
+                id="select-1"
+                defaultValue="placeholder-item"
+                uxpId="Select0">
                 <SelectItem
                     disabled
                     hidden
@@ -27,9 +30,21 @@ export default (
                     text="Choose an option"
                     uxpId="SelectItem0"
                 />
-                <SelectItem value="option-1" text="Option 1" uxpId="SelectItem1" />
-                <SelectItem value="option-2" text="Option 2" uxpId="SelectItem2" />
-                <SelectItem value="option-3" text="Option 3" uxpId="SelectItem3" />
+                <SelectItem
+                    value="option-1"
+                    text="Option 1"
+                    uxpId="SelectItem1"
+                />
+                <SelectItem
+                    value="option-2"
+                    text="Option 2"
+                    uxpId="SelectItem2"
+                />
+                <SelectItem
+                    value="option-3"
+                    text="Option 3"
+                    uxpId="SelectItem3"
+                />
             </Select>
         </AccordionItem>
         <AccordionItem title="Section 4 title" uxpId="AccordionItem3">

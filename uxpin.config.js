@@ -158,5 +158,4 @@ module.exports = {
 /*
 ** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
-** "src/Copy/Copy.js",
 */

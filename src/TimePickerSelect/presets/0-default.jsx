@@ -9,8 +9,19 @@ const selectProps = {
 };
 
 export default (
-    <TimePickerSelect id="time-picker-select-1" {...selectProps} uxpId="TimePickerSelect0">
-        <SelectItem value="AM" text="AM" uxpId="SelectItem0" />
-        <SelectItem value="PM" text="PM" uxpId="SelectItem1" />
+    <TimePickerSelect
+        {...selectProps}
+        id="time-picker-select-1"
+        uxpId="TimePickerSelect0">
+        <SelectItem
+            value="AM"
+            text="AM"
+            uxpId="SelectItem0"
+        />
+        <SelectItem
+            value="PM"
+            text="PM"
+            uxpId="SelectItem1"
+        />
     </TimePickerSelect>
 );
