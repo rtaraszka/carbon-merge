@@ -85,6 +85,7 @@ module.exports = {
           "src/OrderedList/OrderedList.js",
           "src/UnorderedList/UnorderedList.js",
           "src/CodeSnippet/CodeSnippet.js",
+          "src/CodeSnippetSkeleton/CodeSnippetSkeleton.js",
           "src/Pagination/Pagination.js",
           "src/ProgressIndicator/ProgressIndicator.js",
           "src/ProgressStep/ProgressStep.js",
