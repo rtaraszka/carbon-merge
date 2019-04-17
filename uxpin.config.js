@@ -66,6 +66,7 @@ module.exports = {
           "src/SelectItem/SelectItem.js",
           "src/SelectItemGroup/SelectItemGroup.js",
           "src/Slider/Slider.js",
+          "src/SliderSkeleton/SliderSkeleton.js",
           "src/TimePicker/TimePicker.js",
           "src/TimePickerSelect/TimePickerSelect.js",
           "src/DatePicker/DatePicker.js",
@@ -77,6 +78,7 @@ module.exports = {
         include: [
           "src/ComboBox/ComboBox.js",
           "src/Select/Select.js",
+          "src/SelectSkeleton/SelectSkeleton.js",
           "src/MultiSelect/MultiSelect.js",
 
         ]
