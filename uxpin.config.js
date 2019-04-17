@@ -103,6 +103,7 @@ module.exports = {
           "src/TooltipDefinition/TooltipDefinition.js",
           "src/TooltipIcon/TooltipIcon.js",
           "src/Tag/Tag.js",
+          "src/TagSkeleton/TagSkeleton.js",
         ]
       },
       {
