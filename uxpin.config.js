@@ -27,6 +27,7 @@ module.exports = {
           "src/BreadcrumbSkeleton/BreadcrumbSkeleton.js",
           "src/Tab/Tab.js",
           "src/Tabs/Tabs.js",
+          "src/TabsSkeleton/TabsSkeleton.js",
           "src/TabContent/TabContent.js",
           "src/ContentSwitcher/ContentSwitcher.js",
           "src/Switch/Switch.js",
