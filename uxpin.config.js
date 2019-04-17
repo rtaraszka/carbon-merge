@@ -58,6 +58,7 @@ module.exports = {
           "src/CheckboxSkeleton/CheckboxSkeleton.js",
           "src/RadioButton/RadioButton.js",
           "src/RadioButtonGroup/RadioButtonGroup.js",
+          "src/RadioButtonSkeleton/RadioButtonSkeleton.js",
           "src/Toggle/Toggle.js",
           "src/ToggleSmall/ToggleSmall.js",
           "src/ListItem/ListItem.js",
