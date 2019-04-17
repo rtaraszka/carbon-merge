@@ -31,6 +31,7 @@ module.exports = {
           "src/ContentSwitcher/ContentSwitcher.js",
           "src/Switch/Switch.js",
           "src/Search/Search.js",
+          "src/SearchSkeleton/SearchSkeleton.js",
           "src/SearchFilterButton/SearchFilterButton.js",
           "src/SearchLayoutButton/SearchLayoutButton.js",
         ]
