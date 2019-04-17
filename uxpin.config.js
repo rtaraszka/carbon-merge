@@ -10,6 +10,7 @@ module.exports = {
           "src/ButtonSkeleton/ButtonSkeleton.js",
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
+          "src/FileUploaderSkeleton/FileUploaderSkeleton.js",
           "src/CopyButton/CopyButton.js",
           "src/Loading/Loading.js",
           "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
