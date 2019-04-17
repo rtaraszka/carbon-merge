@@ -4555,7 +4555,7 @@ input:not(output):not([data-invalid]):-moz-ui-invalid {
 }
 
 .bx--select-input__wrapper:hover .bx--select-input {
-  background-color: #e5e5e5;
+  background-color: #e5e5e5 !important;
 }
 
 .bx--select-input {
@@ -4576,7 +4576,7 @@ input:not(output):not([data-invalid]):-moz-ui-invalid {
   max-width: 28rem;
   padding: 0 2.625rem 0 1rem;
   color: #171717;
-  background-color: #f3f3f3;
+  background-color: #f3f3f3 !important;
   border: none;
   border-bottom: 1px solid #8c8c8c;
   border-radius: 0;
@@ -4638,16 +4638,16 @@ input:not(output):not([data-invalid]):-moz-ui-invalid {
 }
 
 .bx--select--light .bx--select-input {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .bx--select--light .bx--select-input:hover {
-  background-color: #f3f3f3;
+  background-color: #f3f3f3 !important;
 }
 
 .bx--select--light .bx--select-input:disabled, .bx--select--light .bx--select-input:hover:disabled {
   cursor: not-allowed;
-  background-color: #f3f3f3;
+  background-color: #f3f3f3 !important;
   color: #bebebe;
 }
 
