@@ -21,6 +21,7 @@ module.exports = {
         include: [
           "src/Breadcrumb/Breadcrumb.js",
           "src/BreadcrumbItem/BreadcrumbItem.js",
+          "src/BreadcrumbSkeleton/BreadcrumbSkeleton.js",
           "src/Tab/Tab.js",
           "src/Tabs/Tabs.js",
           "src/TabContent/TabContent.js",
