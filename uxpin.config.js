@@ -111,17 +111,6 @@ module.exports = {
         ]
       },
       {
-        name: "Table",
-        include: [
-          "src/Table/Table.js",
-          "src/TableRow/TableRow.js",
-          "src/TableHead/TableHead.js",
-          "src/TableHeader/TableHeader.js",
-          "src/TableBody/TableBody.js",
-          "src/TableData/TableData.js",
-        ]
-      },
-      {
         name: "Modal",
         include: [
           "src/ComposedModal/ComposedModal.js",
@@ -179,3 +168,9 @@ module.exports = {
 ** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
 */
+// "src/Table/Table.js",
+// "src/TableRow/TableRow.js",
+// "src/TableHead/TableHead.js",
+// "src/TableHeader/TableHeader.js",
+// "src/TableBody/TableBody.js",
+// "src/TableData/TableData.js",
