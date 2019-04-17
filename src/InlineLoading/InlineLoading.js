@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { InlineLoading as InlineLoadingM } from "carbon-components-react";
+import { InlineLoading as InlineLoadingComponent } from "carbon-components-react";
 
 function InlineLoading(props) {
-  return <InlineLoadingM {...props} />;
+  return <InlineLoadingComponent {...props} />;
 }
 
 InlineLoading.propTypes = {
@@ -34,4 +34,4 @@ InlineLoading.propTypes = {
     successDelay: PropTypes.number,
 };
 
-export { InlineLoading as default };
+export default InlineLoading;

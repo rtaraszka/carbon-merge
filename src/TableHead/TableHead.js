@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TableHead as TableHeadM } from "carbon-components-react";
+import { TableHead as TableHeadComponent } from "carbon-components-react";
 
 function TableHead(props) {
-  return <TableHeadM {...props}>{props.children}</TableHeadM>;
+  return (
+      <TableHeadComponent {...props} />
+  );
 }
 
 TableHead.propTypes = {
@@ -18,4 +20,4 @@ TableHead.propTypes = {
   className: PropTypes.string
 };
 
-export { TableHead as default };
+export default TableHead;

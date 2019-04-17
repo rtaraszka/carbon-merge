@@ -1,6 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import InlineLoading from '../InlineLoading';
 
 export default (
-  <InlineLoading uxpId="1" />
+  <InlineLoading
+      description="Loading data..."
+      successDelay={1500}
+      uxpId="InlineLoading0"
+  />
 );

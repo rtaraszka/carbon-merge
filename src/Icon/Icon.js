@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Icon as IconM } from "carbon-components-react";
+import { Icon as IconComponent } from "carbon-components-react";
 import * as Icons from "carbon-icons/dist/carbon-icons.js";
-
 
 const ICONS = [
   "iconAdd",
@@ -177,14 +176,12 @@ const ICONS = [
 ];
 
 function Icon(props) {
-  return <IconM {...props} icon={Icons[props.icon]}>{props.children}</IconM>;
+  return (
+      <IconComponent {...props} icon={Icons[props.icon]} />
+  );
 }
 
 Icon.propTypes = {
-  /**
-   * Select Icon
-   */
-  icon: PropTypes.oneOf(ICONS),
   /**
    * The CSS class name.
    */
@@ -215,21 +212,8 @@ Icon.propTypes = {
    */
   height: PropTypes.string,
 
-    /**
-   * The `<svg>` `viewbox` attribute.
-   */
-  viewBox: PropTypes.string,
+  icon: PropTypes.oneOf(ICONS),
 
-  /**
-   * The `<svg>` `width` attribute.
-   */
-  width: PropTypes.string,
-
-
-  /**
-   * The name in the sprite.
-   */
-  name: PropTypes.string,
   /**
    * The `role` attribute.
    */
@@ -239,14 +223,27 @@ Icon.propTypes = {
    * The CSS styles.
    */
   style: PropTypes.object,
+
+  /**
+   * The `<svg>` `viewbox` attribute.
+   */
+  viewBox: PropTypes.string,
+
+  /**
+   * The `<svg>` `width` attribute.
+   */
+  width: PropTypes.string,
+
   /**
    * The `ref` callback for the icon.
    */
-  iconRef: PropTypes.func
+  iconRef: PropTypes.func,
 };
 
 Icon.defaultProps = {
-  icon: "iconWatson"
-}
+  fillRule: 'evenodd',
+  role: 'img',
+  description: 'Provide a description that will be used as the title',
+};
 
-export { Icon as default };
+export default Icon;

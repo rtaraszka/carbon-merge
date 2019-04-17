@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Loading as LoadingM } from "carbon-components-react";
+import { Loading as LoadingComponent } from "carbon-components-react";
 
 function Loading(props) {
-  return <LoadingM {...props} />;
+  return <LoadingComponent {...props} />;
 }
 
 Loading.propTypes = {
@@ -25,7 +25,7 @@ Loading.propTypes = {
   /**
    * Specify whether you would like the small variant of <Loading>
    */
-  small: PropTypes.bool
+  small: PropTypes.bool,
 };
 
-export { Loading as default };
+export default Loading;

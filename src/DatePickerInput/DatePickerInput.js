@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { DatePickerInput as DatePickerInputM } from "carbon-components-react";
+import { DatePickerInput as DatePickerInputComponent } from "carbon-components-react";
 
 function DatePickerInput(props) {
-  return <DatePickerInputM {...props} />;
+  return <DatePickerInputComponent {...props} />;
 }
 
 DatePickerInput.propTypes = {
@@ -16,15 +16,14 @@ DatePickerInput.propTypes = {
    * The description of the calendar icon.
    */
   iconDescription: PropTypes.string,
-  labelText: PropTypes.string,
-  type: PropTypes.string,
-  invalid: PropTypes.bool,
-  disabled: PropTypes.false,
-  onClick: PropTypes.func,
-  onChange: PropTypes.func,
-  pattern: PropTypes.string,
-  openCalendar: PropTypes.bool,
-  placeholder: PropTypes.string
 };
 
-export { DatePickerInput as default };
+DatePickerInput.defaultProps = {
+  pattern: '\\d{1,2}\\/\\d{1,2}\\/\\d{4}',
+  type: 'text',
+  disabled: false,
+  invalid: false,
+  labelText: '',
+};
+
+export default DatePickerInput;

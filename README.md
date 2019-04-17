@@ -46,19 +46,19 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | Button | ✅ Full Support |
 | Checkbox | ✅ Full Support |
 | ComboBox | ✅ Full Support |
-| ComposedModal | 🔻 Not Supported. Issues with absolutely positioned elements. |
+| ComposedModal | 🔶 Partial support. Passing children doesn't work. To modify children use `modalHeader`, `modalBody`, `modalFooter` properties. |
 | ContentSwitcher | ✅ Full Support |
 | CopyButton | ✅ Full Support |
 | DataTable | 🔻 Not Supported. Unknown issues.|
-| DataPicker | 🔻 Not Supported. Issue with the implementation of FlatPicker. Likely can be solved by direct implementation of FlatPicker. |
-| Dropdown | ✅ Full Support |
+| DataPicker | 🔶 Partial support. Only `simple` mode work. |
+| Dropdown | 🔻 Not Supported. Issueas with `React.cloneElement()` |
 | FileUploader | ✅ Full Support |
-| Footer | 🔻 Not Supported. Issues with absolutely positioned elements. |
+| Form | ✅ Full Support |
 | Icon | ✅ Full Support |
 | InlineLoading | ✅ Full Support |
 | Link | ✅ Full Support |
-| Loading | 🔻 Not Supported. Issues with absolutely positioned elements. |
-| Modal | 🔻 Not Supported. Issues with absolutely positioned elements. |
+| Loading | ✅ Full Support |
+| Modal | ✅ Full Support |
 | MultiSelect | ✅ Full Support |
 | Notifications | ✅ Full Support |
 | NumberInput | ✅ Full Support |
@@ -71,6 +71,8 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | Search | ✅ Full Support |
 | Select | ✅ Full Support |
 | Slider | ✅ Full Support |
+| SkeletonPlaceholder | ✅ Full Support |
+| SkeletonText | ✅ Full Support |
 | StructuredList | ✅ Full Support |
 | Table | ✅ Full Support |
 | Tabs | ✅ Full Support |

@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 import ProgressStep from "../ProgressStep";
 
 export default (
-  <ProgressStep
-    uxpId="1"
-    label="label"
-    description="Step 1: Getting Started with Merge"
-  />
+    <ProgressStep
+        label="First step"
+        description="Step 1: Getting started with Carbon Design System"
+        secondaryLabel="Optional label"
+        uxpId="ProgressStep0"
+    />
 );

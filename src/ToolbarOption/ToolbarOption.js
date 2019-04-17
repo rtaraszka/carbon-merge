@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ToolbarOption as ToolbarOptionM } from "carbon-components-react";
+import { ToolbarOption as ToolbarOptionComponent } from "carbon-components-react";
 
 function ToolbarOption(props) {
-  return <ToolbarOptionM {...props}>{props.children}</ToolbarOptionM>;
+  return (
+      <ToolbarOptionComponent {...props} />
+  );
 }
 
 ToolbarOption.propTypes = {
@@ -13,4 +15,4 @@ ToolbarOption.propTypes = {
   children: PropTypes.node,
 };
 
-export { ToolbarOption as default };
+export default ToolbarOption;

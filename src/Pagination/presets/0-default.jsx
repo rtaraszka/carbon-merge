@@ -1,6 +1,15 @@
-import * as React from "react";
+import React from "react";
 import Pagination from "../Pagination";
 
 export default (
-  <Pagination className="extra-class" uxpId="1" pageSizes={[5, 10]} totalItems={50} />
+    <Pagination
+        page={1}
+        totalItems={103}
+        backwardText="Previous page"
+        forwardText="Next page"
+        pageSize={10}
+        pageSizes={[10, 20, 30, 40, 50]}
+        itemsPerPageText="Items per page:"
+        uxpId="Pagination0"
+    />
 );

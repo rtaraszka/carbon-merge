@@ -1,9 +1,9 @@
-import * as React from "react";
+import React from "react";
 import SearchLayoutButton from "../SearchLayoutButton";
 
 export default (
-<SearchLayoutButton
-  uxpId="1"
-  format="grid"
-/>
+    <SearchLayoutButton
+      format="grid"
+      uxpId="SearchLayoutButton0"
+    />
 );

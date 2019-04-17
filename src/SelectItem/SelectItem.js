@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SelectItem as SelectItemM } from "carbon-components-react";
+import { SelectItem as SelectItemComponent } from "carbon-components-react";
 
 function SelectItem(props) {
-  return <SelectItemM {...props} />;
+  return <SelectItemComponent {...props} />;
 }
 
 SelectItem.propTypes = {
   /**
    * Specify the value of the <SelectItem>
    */
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
 
   /**
    * Specify an optional className to be applied to the node
@@ -30,7 +30,7 @@ SelectItem.propTypes = {
   /**
    * Provide the contents of your <SelectItem>
    */
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
 };
 
-export { SelectItem as default };
+export default SelectItem;

@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TextArea as TextAreaM } from "carbon-components-react";
+import { TextArea as TextAreaComponent } from "carbon-components-react";
 
 function TextArea(props) {
-  return <TextAreaM {...props} />;
+  return (
+      <TextAreaComponent {...props} />
+  );
 }
 
 TextArea.propTypes = {
@@ -37,7 +39,7 @@ TextArea.propTypes = {
    * Provide the text that will be read by a screen reader when visiting this
    * control
    */
-  labelText: PropTypes.node,
+  labelText: PropTypes.node.isRequired,
 
   /**
    * Optionally provide an `onChange` handler that is called whenever <textarea>
@@ -92,4 +94,4 @@ TextArea.propTypes = {
   light: PropTypes.bool,
 };
 
-export { TextArea as default };
+export default TextArea;

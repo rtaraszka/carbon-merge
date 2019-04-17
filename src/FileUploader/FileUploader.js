@@ -1,42 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FileUploader as FileUploaderM } from "carbon-components-react";
+import { FileUploader as FileUploaderComponent } from "carbon-components-react";
 
 function FileUploader(props) {
-  return <FileUploaderM {...props} />;
+  return <FileUploaderComponent {...props} />;
 }
 
 FileUploader.propTypes = {
   /**
-   * Provide a description for the complete/close icon that can be read by screen readers
+   * Provide a custom className to be applied to the container node
    */
-  iconDescription: PropTypes.string,
+  className: PropTypes.string,
+
+  /**
+   * Specify whether you want to disable any updates to the FileUploaderButton
+   * label
+   */
+  disableLabelChanges: PropTypes.bool,
+
+  /**
+   * Provide a unique id for the underlying <input> node
+   */
+  id: PropTypes.string,
 
   /**
    * Provide the label text to be read by screen readers when interacting with
-   * the <FileUploaderButton>
+   * this control
    */
-  buttonLabel: PropTypes.string,
+  labelText: PropTypes.string,
 
   /**
-   * Specify the type of the <FileUploaderButton>
+   * Specify whether you want the component to list the files that have been
+   * submitted to be uploaded
    */
-  buttonKind: PropTypes.oneOf(['primary', 'secondary', 'danger', 'ghost', 'danger--primary', 'tertiary']),
-
-  /**
-   * Specify the status of the File Upload
-   */
-  filenameStatus: PropTypes.oneOf(["edit", "complete", "uploading"]).isRequired,
-
-  /**
-   * Specify the description text of this <FileUploader>
-   */
-  labelDescription: PropTypes.string,
-
-  /**
-   * Specify the title text of this <FileUploader>
-   */
-  labelTitle: PropTypes.string,
+  listFiles: PropTypes.bool,
 
   /**
    * Specify if the component should accept multiple files to upload
@@ -49,20 +46,48 @@ FileUploader.propTypes = {
   name: PropTypes.string,
 
   /**
+   * Provide an optional `onChange` hook that is called each time the <input>
+   * value changes
+   */
+  onChange: PropTypes.func,
+
+  /**
    * Provide an optional `onClick` hook that is called each time the button is
    * clicked
    */
   onClick: PropTypes.func,
 
   /**
-   * Provide a custom className to be applied to the container node
+   * Provide an accessibility role for the <FileUploaderButton>
    */
-  className: PropTypes.string,
+  role: PropTypes.string,
+
+  /**
+   * Provide a custom tabIndex value for the <FileUploaderButton>
+   */
+  tabIndex: PropTypes.number,
+
+  /**
+   * Specify the type of underlying button
+   */
+  buttonKind: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'danger',
+    'ghost',
+    'danger--primary',
+    'tertiary',
+  ]),
 
   /**
    * Specify the types of files that this input should be able to receive
    */
-  accept: PropTypes.arrayOf(PropTypes.string)
+  accept: PropTypes.arrayOf(PropTypes.string),
+
+  /**
+   * Specify whether file input is disabled
+   */
+  disabled: PropTypes.bool,
 };
 
-export { FileUploader as default };
+export default FileUploader;

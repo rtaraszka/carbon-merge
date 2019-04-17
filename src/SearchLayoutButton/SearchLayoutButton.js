@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SearchLayoutButton as SearchLayoutButtonM } from "carbon-components-react";
+import { SearchLayoutButton as SearchLayoutButtonComponent } from "carbon-components-react";
 
 function SearchLayoutButton(props) {
-  return <SearchLayoutButtonM {...props} style={{"marginLeft": 0}} />;
+  return <SearchLayoutButtonComponent {...props} />;
 }
 
 SearchLayoutButton.propTypes = {
@@ -33,4 +33,4 @@ SearchLayoutButton.propTypes = {
   onChangeFormat: PropTypes.func
 };
 
-export { SearchLayoutButton as default };
+export default SearchLayoutButton;

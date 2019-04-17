@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Tabs as TabsM } from "carbon-components-react";
+import { Tabs as TabsComponent } from "carbon-components-react";
 
 function Tabs(props) {
-  return <TabsM {...props}>{props.children}</TabsM>;
+  return (
+      <TabsComponent {...props} />
+  );
 }
 
 Tabs.propTypes = {
@@ -34,7 +36,7 @@ Tabs.propTypes = {
    * By default, this value is "navigation". You can also provide an alternate
    * role if it makes sense from the accessibility-side
    */
-  role: PropTypes.string,
+  role: PropTypes.string.isRequired,
 
   /**
    * Optionally provide an `onClick` handler that is invoked when a <Tab> is
@@ -58,7 +60,7 @@ Tabs.propTypes = {
   /**
    * Provide a string that represents the `href` for the triggered <Tab>
    */
-  triggerHref: PropTypes.string,
+  triggerHref: PropTypes.string.isRequired,
 
   /**
    * Optionally provide an index for the currently selected <Tab>
@@ -69,7 +71,20 @@ Tabs.propTypes = {
    * Provide a description that is read out when a user visits the caret icon
    * for the dropdown menu of items
    */
-  iconDescription: PropTypes.string
+  iconDescription: PropTypes.string.isRequired,
+
+  /**
+   * Provide a className that is applied to the <TabContent> components
+   */
+  tabContentClassName: PropTypes.string,
 };
 
-export { Tabs as default };
+Tabs.defaultProps = {
+  iconDescription: 'show menu options',
+  role: 'navigation',
+  triggerHref: '#',
+  selected: 0,
+  ariaLabel: 'listbox',
+};
+
+export default Tabs;

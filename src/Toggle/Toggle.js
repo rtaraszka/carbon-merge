@@ -1,32 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Toggle as ToggleM } from "carbon-components-react";
+import { Toggle as ToggleComponent } from "carbon-components-react";
 
-export default class Toggle extends React.Component {
+class Toggle extends Component {
   constructor(props) {
-    super();
+    super(props);
 
     this.state = {
-      toggled: false
+      toggled: props.toggled,
     };
+
+    this.handleToggle = this.handleToggle.bind(this);
   }
 
-  handleClick() {
-    if (this.state.toggled === false) {
-      this.setState({ toggled: true });
-    } else {
-      this.setState({ toggled: false });
-    }
+  handleToggle(event) {
+    this.setState({ toggled: !this.state.toggled });
+    this.props.handleToggle(event);
   }
 
   render() {
     return (
-      <ToggleM
-        id="toggle-merge"
+      <ToggleComponent
         {...this.props}
+        id="toggle-merge"
         toggled={this.state.toggled}
-        onChange={e => this.handleClick('', "toggle-merge", e)}
-        onToggle={e => this.handleClick('', "toggle-merge", e)}
+        onToggle={this.handleToggle}
       />
     );
   }
@@ -68,3 +66,12 @@ Toggle.propTypes = {
    */
   labelB: PropTypes.string
 };
+
+Toggle.defaultProps = {
+  defaultToggled: false,
+  label: '',
+  labelA: 'Off',
+  labelB: 'On',
+};
+
+export default Toggle;

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link as LinkM } from "carbon-components-react";
+import { Link as LinkComponent } from "carbon-components-react";
 
 function Link(props) {
-  return <LinkM {...props}>{props.children}</LinkM>;
+  return <LinkComponent {...props} />;
 }
 
 Link.propTypes = {
@@ -20,7 +20,7 @@ Link.propTypes = {
   /**
    * Provide the `href` attribute for the <a> node
    */
-  href: PropTypes.string
+  href: PropTypes.string,
 };
 
-export { Link as default };
+export default Link;

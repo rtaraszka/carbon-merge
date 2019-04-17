@@ -1,8 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import Link from '../Link';
 
 export default (
-  <Link uxpId="1" href="#">
-    Merge
+  <Link
+      className="some-class"
+      href="#"
+      uxpId="Link0">
+      Link
   </Link>
 );

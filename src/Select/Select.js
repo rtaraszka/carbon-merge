@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Select as SelectM } from "carbon-components-react";
+import { Select as SelectComponent } from "carbon-components-react";
 
 function Select(props) {
-  return <SelectM {...props}>{props.children}</SelectM>;
+  return <SelectComponent {...props} />
 }
 
 Select.propTypes = {
@@ -20,7 +20,7 @@ Select.propTypes = {
   /**
    * Specify a custom `id` for the `<select>`
    */
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
 
   /**
    * Specify whether you want the inline version of this control
@@ -47,12 +47,12 @@ Select.propTypes = {
   /**
    * Optionally provide the default value of the `<select>`
    */
-  defaultValue: PropTypes.any,
+  defaultValue: PropTypes.string,
 
   /**
    * Provide a description for the twistie icon that can be read by screen readers
    */
-  iconDescription: PropTypes.string,
+  iconDescription: PropTypes.string.isRequired,
 
   /**
    * Specify whether the label should be hidden, or not
@@ -77,7 +77,7 @@ Select.propTypes = {
   /**
    * Specify whether you want the light version of this control
    */
-  light: PropTypes.bool
+  light: PropTypes.bool,
 };
 
-export { Select as default };
+export default Select;

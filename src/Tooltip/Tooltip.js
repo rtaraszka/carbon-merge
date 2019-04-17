@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Tooltip as TooltipM } from "carbon-components-react";
+import { Tooltip as TooltipComponent } from "carbon-components-react";
 
 function Tooltip(props) {
-  return <TooltipM {...props}>{props.children}</TooltipM>;
+  return (
+      <TooltipComponent {...props} />
+  );
 }
 
 Tooltip.propTypes = {
@@ -45,13 +47,10 @@ Tooltip.propTypes = {
     /**
      * The adjustment of the tooltip position.
      */
-    menuOffset: PropTypes.oneOfType([
-      PropTypes.shape({
+    menuOffset: PropTypes.shape({
         top: PropTypes.number,
         left: PropTypes.number,
-      }),
-      PropTypes.func,
-    ]),
+    }),
 
     /**
      * The content to put into the trigger UI, except the (default) tooltip icon.
@@ -59,18 +58,24 @@ Tooltip.propTypes = {
     triggerText: PropTypes.node,
 
     /**
+     * The callback function to optionally render the icon element.
+     * It should be a component with React.forwardRef().
+     */
+    renderIcon: PropTypes.string,
+
+    /**
      * `true` to show the default tooltip icon.
      */
     showIcon: PropTypes.bool,
 
     /**
-     * The the default tooltip icon.
+     * The tooltip icon element or `<Icon>` metadata.
      */
     icon: PropTypes.shape({
-      width: PropTypes.string,
-      height: PropTypes.string,
-      viewBox: PropTypes.string,
-      svgData: PropTypes.object,
+        width: PropTypes.string,
+        height: PropTypes.string,
+        viewBox: PropTypes.string.isRequired,
+        svgData: PropTypes.object.isRequired,
     }),
 
     /**
@@ -96,7 +101,7 @@ Tooltip.propTypes = {
     /**
      * Optional prop to specify the tabIndex of the Tooltip
      */
-    tabIndex: PropTypes.number, 
+    tabIndex: PropTypes.number,
 };
 
-export { Tooltip as default };
+export default Tooltip;

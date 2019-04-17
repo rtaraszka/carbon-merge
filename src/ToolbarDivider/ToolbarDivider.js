@@ -1,12 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { ToolbarDivider as ToolbarDividerM } from "carbon-components-react";
+import { ToolbarDivider as ToolbarDividerComponent } from "carbon-components-react";
 
 function ToolbarDivider(props) {
-  return <ToolbarDividerM {...props}>{props.children}</ToolbarDividerM>;
+  return <ToolbarDividerComponent {...props} />;
 }
 
-ToolbarDivider.propTypes = {
-};
-
-export { ToolbarDivider as default };
+export default ToolbarDivider;

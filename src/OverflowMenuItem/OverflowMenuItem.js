@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { OverflowMenuItem as OverflowMenuItemM } from "carbon-components-react";
+import { OverflowMenuItem as OverflowMenuItemComponent } from "carbon-components-react";
 
 function OverflowMenuItem(props) {
-  return <OverflowMenuItemM {...props} />;
+  return <OverflowMenuItemComponent {...props} />;
 }
 
 OverflowMenuItem.propTypes = {
- /**
+  /**
    * The CSS class name to be placed on the button element
    */
   className: PropTypes.string,
@@ -20,7 +20,7 @@ OverflowMenuItem.propTypes = {
   /**
    * The text in the menu item.
    */
-  itemText: PropTypes.node,
+  itemText: PropTypes.node.isRequired,
 
   /**
    * If given, overflow item will render as a link with the given href
@@ -42,6 +42,9 @@ OverflowMenuItem.propTypes = {
    */
   disabled: PropTypes.bool,
 
+  /**
+   * event handlers
+   */
   onBlur: PropTypes.func,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
@@ -73,4 +76,11 @@ OverflowMenuItem.propTypes = {
   requireTitle: PropTypes.bool,
 };
 
-export { OverflowMenuItem as default };
+OverflowMenuItem.defaultProps = {
+ hasDivider: false,
+ isDelete: false,
+ disabled: false,
+ itemText: 'Provide itemText',
+};
+
+export default OverflowMenuItem;

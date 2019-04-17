@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SelectItemGroup as SelectItemGroupM } from "carbon-components-react";
+import { SelectItemGroup as SelectItemGroupComponent } from "carbon-components-react";
 
 function SelectItemGroup(props) {
-  return <SelectItemGroupM {...props}>{props.children}</SelectItemGroupM>;
+  return <SelectItemGroupComponent {...props} />
 }
 
 SelectItemGroup.propTypes = {
@@ -25,7 +25,12 @@ SelectItemGroup.propTypes = {
   /**
    * Specify the label to be displayed
    */
-  label: PropTypes.string
+  label: PropTypes.string.isRequired,
 };
 
-export { SelectItemGroup as default };
+SelectItemGroup.defaultProps = {
+  disabled: false,
+  label: 'Provide label',
+};
+
+export default SelectItemGroup;

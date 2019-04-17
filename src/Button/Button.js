@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button as ButtonM } from "carbon-components-react";
+import { Button as ButtonComponent } from "carbon-components-react";
 import * as Icons from "carbon-icons/dist/carbon-icons.js";
 
 /**
@@ -181,18 +181,21 @@ const ICONS = [
 
 function Button(props) {
   return (
-    <ButtonM {...props} onClick={props.onClick} icon={Icons[props.icon]}>
-      {props.children}
-    </ButtonM>
+    <ButtonComponent {...props} icon={Icons[props.icon]} />
   );
 }
 
 Button.propTypes = {
-  onClick: PropTypes.func,
   /**
    * Specify the content of your Button
    */
   children: PropTypes.node,
+
+  /**
+   * Specify how the button itself should be rendered.
+   * Make sure to apply all props to the root node and render children appropriately
+   */
+  as: PropTypes.string,
 
   /**
    * Specify an optional className to be added to your Button
@@ -213,13 +216,13 @@ Button.propTypes = {
    * Specify the kind of Button you want to create
    */
   kind: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "danger",
-    "ghost",
-    "danger--primary",
-    "tertiary"
-  ]),
+    'primary',
+    'secondary',
+    'danger',
+    'ghost',
+    'danger--primary',
+    'tertiary',
+  ]).isRequired,
 
   /**
    * Optionally specify an href for your Button to become an <a> element
@@ -234,7 +237,7 @@ Button.propTypes = {
   /**
    * Optional prop to specify the type of the Button
    */
-  type: PropTypes.oneOf(["button", "reset", "submit"]),
+  type: PropTypes.oneOf(['button', 'reset', 'submit']),
 
   /**
    * Optional prop to specify the role of the Button
@@ -242,10 +245,22 @@ Button.propTypes = {
   role: PropTypes.string,
 
   /**
+   * Optional prop to allow overriding the icon rendering.
+   * Can be a React component class
+   */
+  renderIcon: PropTypes.string,
+
+  /**
    * Specify an icon to include in the Button through a string or object
    * representing the SVG data of the icon
    */
-  icon: PropTypes.oneOf(ICONS)
+  icon: PropTypes.oneOf(ICONS),
+
+  /**
+   * If specifying the `icon` prop, provide a description for that icon that can
+   * be read by screen readers
+   */
+  iconDescription: PropTypes.string,
 };
 
-export { Button as default };
+export default Button;

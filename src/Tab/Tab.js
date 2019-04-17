@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Tab as TabM } from "carbon-components-react";
+import { Tab as TabComponent } from "carbon-components-react";
 
 function Tab(props) {
-  return <TabM {...props}>{props.children}</TabM>;
+  return (
+      <TabComponent {...props} />
+  );
 }
 
 Tab.propTypes = {
-    children: PropTypes.node,
     /**
      * Specify an optional className to be added to your Tab
      */
@@ -44,7 +45,7 @@ Tab.propTypes = {
     /**
      * Provide the contents of your Tab
      */
-    label: PropTypes.string,
+    label: PropTypes.node,
 
     /**
      * Provide an accessibility role for your Tab
@@ -80,4 +81,4 @@ Tab.propTypes = {
     renderAnchor: PropTypes.func,
 };
 
-export { Tab as default };
+export default Tab;

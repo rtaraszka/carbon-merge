@@ -1,6 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import Icon from '../Icon';
 
 export default (
-  <Icon uxpId="1" icon="iconWatson" fill="#006CFF" width="100%" height="100%" />
+  <Icon
+      icon="iconAdd"
+      fill="grey"
+      description="This is a description of the icon and what it does in context"
+      className="extra-class"
+      uxpId="Icon0"
+  />
 );

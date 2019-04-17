@@ -1,13 +1,21 @@
-import * as React from "react";
+import React from "react";
 import DatePicker from "../DatePicker";
 import DatePickerInput from "../../DatePickerInput/DatePickerInput";
 
 export default (
-  <DatePicker
-    uxpId="1"
-    placeholder="mm/dd/yyyy"
-    datePickerType="single"
-  >
-    <DatePickerInput uxpId="2" id="date-picker-input" />
-  </DatePicker>
+    <DatePicker
+        id="date-picker"
+        datePickerType="simple"
+        uxpId="DatePicker0">
+        <DatePickerInput
+            className="some-class"
+            iconDescription="Icon description"
+            id="date-picker-input"
+            invalidText="A valid value is required"
+            labelText="Date Picker label"
+            pattern="d{1,2}/d{4}"
+            placeholder="mm/dd/yyyy"
+            uxpId="DatePickerInput0"
+        />
+    </DatePicker>
 );

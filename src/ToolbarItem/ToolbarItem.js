@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ToolbarItem as ToolbarItemM } from "carbon-components-react";
+import { ToolbarItem as ToolbarItemComponent } from "carbon-components-react";
 
 function ToolbarItem(props) {
-  return <ToolbarItemM {...props}>{props.children}</ToolbarItemM>;
+  return (
+      <ToolbarItemComponent {...props} />
+  );
 }
 
 ToolbarItem.propTypes = {
@@ -25,4 +27,8 @@ ToolbarItem.propTypes = {
   placeHolderText: PropTypes.string,
 };
 
-export { ToolbarItem as default };
+ToolbarItem.defaultProps = {
+  placeHolderText: 'Provide placeHolderText',
+};
+
+export default ToolbarItem;

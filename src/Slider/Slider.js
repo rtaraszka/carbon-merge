@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Slider as SliderM } from "carbon-components-react";
+import { Slider as SliderComponent } from "carbon-components-react";
 
 function Slider(props) {
-  return <SliderM {...props} />;
+  return <SliderComponent {...props} />;
 }
 
 Slider.propTypes = {
@@ -35,12 +35,12 @@ Slider.propTypes = {
   /**
    * The value.
    */
-  value: PropTypes.number,
+  value: PropTypes.number.isRequired,
 
   /**
    * The minimum value.
    */
-  min: PropTypes.number,
+  min: PropTypes.number.isRequired,
 
   /**
    * The label associated with the minimum value.
@@ -50,7 +50,7 @@ Slider.propTypes = {
   /**
    * The maximum value.
    */
-  max: PropTypes.number,
+  max: PropTypes.number.isRequired,
 
   /**
    * The label associated with the maximum value.
@@ -91,7 +91,7 @@ Slider.propTypes = {
   /**
    * The `name` attribute of the `<input>`.
    */
-  name: PropTypes.bool,
+  name: PropTypes.string,
 
   /**
    * The `type` attribute of the `<input>`.
@@ -106,7 +106,19 @@ Slider.propTypes = {
   /**
    * `true` to use the light version.
    */
-  light: PropTypes.bool
+  light: PropTypes.bool,
 };
 
-export { Slider as default };
+Slider.defaultProps = {
+  hideTextInput: false,
+  step: 1,
+  stepMuliplier: 4,
+  disabled: false,
+  minLabel: '',
+  maxLabel: '',
+  inputType: 'number',
+  ariaLabelInput: 'Slider number input',
+  light: false,
+};
+
+export default Slider;

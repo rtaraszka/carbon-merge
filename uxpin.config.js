@@ -6,9 +6,15 @@ module.exports = {
         include: [
           "src/Icon/Icon.js",
           "src/Button/Button.js",
+          "src/SecondaryButton/SecondaryButton.js",
+          "src/ButtonSkeleton/ButtonSkeleton.js",
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
           "src/CopyButton/CopyButton.js",
+          "src/Loading/Loading.js",
+          "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
+          "src/SkeletonText/SkeletonText.js",
+          "src/Tile/Tile.js",
         ]
       },
       {
@@ -16,6 +22,7 @@ module.exports = {
         include: [
           "src/Breadcrumb/Breadcrumb.js",
           "src/BreadcrumbItem/BreadcrumbItem.js",
+          "src/BreadcrumbSkeleton/BreadcrumbSkeleton.js",
           "src/Tab/Tab.js",
           "src/Tabs/Tabs.js",
           "src/TabContent/TabContent.js",
@@ -24,7 +31,7 @@ module.exports = {
           "src/Search/Search.js",
           "src/SearchFilterButton/SearchFilterButton.js",
           "src/SearchLayoutButton/SearchLayoutButton.js",
-        ] 
+        ]
       },
       {
         name: "Toolbar",
@@ -45,6 +52,7 @@ module.exports = {
           "src/TextArea/TextArea.js",
           "src/NumberInput/NumberInput.js",
           "src/Checkbox/Checkbox.js",
+          "src/CheckboxSkeleton/CheckboxSkeleton.js",
           "src/RadioButton/RadioButton.js",
           "src/RadioButtonGroup/RadioButtonGroup.js",
           "src/Toggle/Toggle.js",
@@ -52,19 +60,17 @@ module.exports = {
           "src/ListItem/ListItem.js",
           "src/SelectItem/SelectItem.js",
           "src/SelectItemGroup/SelectItemGroup.js",
-          "src/RadioTile/RadioTile.js",
-          "src/TileGroup/TileGroup.js",
           "src/Slider/Slider.js",
           "src/TimePicker/TimePicker.js",
-          "src/TimePickerSelect/TimePickerSelect.js"
+          "src/TimePickerSelect/TimePickerSelect.js",
+          "src/DatePicker/DatePicker.js",
+          "src/DatePickerInput/DatePickerInput.js",
         ]
       },
       {
         name: "Selects and Dropdowns",
         include: [
           "src/ComboBox/ComboBox.js",
-          "src/Dropdown/Dropdown.js",
-          "src/DropdownItem/DropdownItem.js",
           "src/Select/Select.js",
           "src/MultiSelect/MultiSelect.js",
 
@@ -75,17 +81,20 @@ module.exports = {
         include: [
           "src/Accordion/Accordion.js",
           "src/AccordionItem/AccordionItem.js",
-          "src/Notification/Notification.js",
+          "src/AccordionSkeleton/AccordionSkeleton.js",
           "src/OrderedList/OrderedList.js",
           "src/UnorderedList/UnorderedList.js",
           "src/CodeSnippet/CodeSnippet.js",
+          "src/CodeSnippetSkeleton/CodeSnippetSkeleton.js",
           "src/Pagination/Pagination.js",
           "src/ProgressIndicator/ProgressIndicator.js",
           "src/ProgressStep/ProgressStep.js",
           "src/InlineLoading/InlineLoading.js",
           "src/Tooltip/Tooltip.js",
+          "src/TooltipDefinition/TooltipDefinition.js",
+          "src/TooltipIcon/TooltipIcon.js",
           "src/Tag/Tag.js",
-        ] 
+        ]
       },
       {
         name: "Table",
@@ -96,47 +105,62 @@ module.exports = {
           "src/TableHeader/TableHeader.js",
           "src/TableBody/TableBody.js",
           "src/TableData/TableData.js",
-        ] 
+        ]
       },
       {
-        name: "Header",
+        name: "Modal",
         include: [
-          "src/Header/Header/Header.js",
-          "src/Header/HeaderGlobalAction/HeaderGlobalAction.js",
-          "src/Header/HeaderGlobalBar/HeaderGlobalBar.js",
-          "src/Header/HeaderMenu/HeaderMenu.js",
-          "src/Header/HeaderMenuButton/HeaderMenuButton.js",
-          "src/Header/HeaderMenuItem/HeaderMenuItem.js",
-          "src/Header/HeaderName/HeaderName.js",
-          "src/Header/HeaderNavigation/HeaderNavigation.js",
-        ]
-      }
+          "src/ComposedModal/ComposedModal.js",
+          "src/Modal/Modal.js",
+        ],
+      },
+      {
+        name: "Form",
+        include: [
+          "src/Form/Form.js",
+          "src/FormItem/FormItem.js",
+          "src/FormLabel/FormLabel.js",
+          "src/FormGroup/FormGroup.js",
+        ],
+      },
+      {
+        name: "StructuredListCell",
+        include: [
+          "src/StructuredListWrapper/StructuredListWrapper.js",
+          "src/StructuredListHead/StructuredListHead.js",
+          "src/StructuredListBody/StructuredListBody.js",
+          "src/StructuredListRow/StructuredListRow.js",
+          "src/StructuredListCell/StructuredListCell.js",
+        ],
+      },
+      {
+        name: "UI Shell",
+        include: [
+          "src/UIShell/UIShellHeader/UIShellHeader.js",
+          "src/UIShell/UIShellHeaderGlobalBar/UIShellHeaderGlobalBar.js",
+          "src/UIShell/UIShellHeaderGlobalAction/UIShellHeaderGlobalAction.js",
+          "src/UIShell/UIShellHeaderName/UIShellHeaderName.js",
+          "src/UIShell/UIShellHeaderMenuButton/UIShellHeaderMenuButton.js",
+          "src/UIShell/UIShellHeaderMenu/UIShellHeaderMenu.js",
+          "src/UIShell/UIShellHeaderMenuItem/UIShellHeaderMenuItem.js",
+          "src/UIShell/UIShellHeaderNavigation/UIShellHeaderNavigation.js",
+          "src/UIShell/UIShellSideNav/UIShellSideNav.js",
+          "src/UIShell/UIShellSideNavHeader/UIShellSideNavHeader.js",
+          "src/UIShell/UIShellSideNavDetails/UIShellSideNavDetails.js",
+          "src/UIShell/UIShellSideNavSwitcher/UIShellSideNavSwitcher.js",
+          "src/UIShell/UIShellSideNavItems/UIShellSideNavItems.js",
+          "src/UIShell/UIShellSideNavLink/UIShellSideNavLink.js",
+          "src/UIShell/UIShellSideNavMenu/UIShellSideNavMenu.js",
+          "src/UIShell/UIShellSideNavMenuItem/UIShellSideNavMenuItem.js",
+        ],
+      },
     ]
   },
   name: "IBM Carbon"
 };
 
 
-/* 
-** Temporarily unsuported: 
+/*
+** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
-** "src/Footer/Footer.js"  
-** "src/Loading/Loading.js"
-** "src/TooltipDefinition/TooltipDefinition.js",
-** "src/TooltipSimple/TooltipSimple.js",
-** "src/Copy/Copy.js",
-** "src/DatePicker/DatePicker.js",
-** "src/DatePickerInput/DatePickerInput.js"
-** "src/SideNav/SideNav/SideNav.js",
-** "src/SideNav/SideNavDetails/SideNavDetails.js",
-** "src/SideNav/SideNavFooter/SideNavFooter.js",
-** "src/SideNav/SideNavHeader/SideNavHeader.js",
-** "src/SideNav/SideNavIcon/SideNavIcon.js",
-** "src/SideNav/SideNavItem/SideNavItem.js",
-** "src/SideNav/SideNavItems/SideNavItems.js",
-** "src/SideNav/SideNavLink/SideNavLink.js",
-** "src/SideNav/SideNavLinkText/SideNavLinkText.js",
-** "src/SideNav/SideNavMenu/SideNavMenu.js",
-** "src/SideNav/SideNavMenuItem/SideNavMenuItem.js",
-** "src/SideNav/SideNavSwitcher/SideNavSwitcher.js"
 */

@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TableData as TableDataM } from "carbon-components-react";
+import { TableData as TableDataComponent } from "carbon-components-react";
 
 function TableData(props) {
-  return <TableDataM {...props}>{props.children}</TableDataM>;
+  return (
+      <TableDataComponent {...props} />
+  );
 }
 
 TableData.propTypes = {
@@ -33,4 +35,4 @@ TableData.propTypes = {
   expanded: PropTypes.bool,
 };
 
-export { TableData as default };
+export default TableData;

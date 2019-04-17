@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { OverflowMenu as OverflowMenuM } from "carbon-components-react";
+import { OverflowMenu as OverflowMenuComponent } from "carbon-components-react";
 
 function OverflowMenu(props) {
-  return <OverflowMenuM {...props}>{props.children}</OverflowMenuM>;
+  return (
+      <OverflowMenuComponent {...props} />
+  );
 }
 
 OverflowMenu.propTypes = {
@@ -15,7 +17,7 @@ OverflowMenu.propTypes = {
   /**
    * The menu direction, supported only with `floatingMenu={true}`.
    */
-  direction: PropTypes.oneOf(["top", "bottom"]),
+  direction: PropTypes.oneOf(['top', 'bottom']),
 
   /**
    * `true` if the menu alignment should be flipped.
@@ -71,7 +73,7 @@ OverflowMenu.propTypes = {
   /**
    * The icon description.
    */
-  iconDescription: PropTypes.string,
+  iconDescription: PropTypes.string.isRequired,
 
   /**
    * The icon.
@@ -80,7 +82,7 @@ OverflowMenu.propTypes = {
     width: PropTypes.string,
     height: PropTypes.string,
     viewBox: PropTypes.string.isRequired,
-    svgData: PropTypes.object.isRequired
+    svgData: PropTypes.object.isRequired,
   }),
 
   /**
@@ -91,24 +93,18 @@ OverflowMenu.propTypes = {
   /**
    * The adjustment in position applied to the floating menu.
    */
-  menuOffset: PropTypes.oneOfType([
-    PropTypes.shape({
-      top: PropTypes.number,
-      left: PropTypes.number
-    }),
-    PropTypes.func
-  ]),
+  menuOffset: PropTypes.shape({
+    top: PropTypes.number,
+    left: PropTypes.number,
+  }),
 
   /**
    * The adjustment in position applied to the floating menu.
    */
-  menuOffsetFlip: PropTypes.oneOfType([
-    PropTypes.shape({
-      top: PropTypes.number,
-      left: PropTypes.number
-    }),
-    PropTypes.func
-  ]),
+  menuOffsetFlip: PropTypes.shape({
+    top: PropTypes.number,
+    left: PropTypes.number,
+  }),
 
   /**
    * The CSS class for the icon.
@@ -118,7 +114,7 @@ OverflowMenu.propTypes = {
   /**
    * Function called to override icon rendering.
    */
-  renderIcon: PropTypes.func,
+  renderIcon: PropTypes.object,
 
   /**
    * Function called when menu is closed
@@ -128,7 +124,17 @@ OverflowMenu.propTypes = {
   /**
    * Function called when menu is closed
    */
-  onOpen: PropTypes.func
+  onOpen: PropTypes.func,
 };
 
-export { OverflowMenu as default };
+OverflowMenu.defaultProps = {
+  ariaLabel: 'list of options',
+  iconDescription: 'open and close list of options',
+  open: false,
+  direction: 'bottom',
+  flipped: false,
+  floatingMenu: false,
+  tabIndex: 0,
+};
+
+export default OverflowMenu;

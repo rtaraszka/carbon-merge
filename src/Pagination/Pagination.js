@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Pagination as PaginationM } from "carbon-components-react";
+import { Pagination as PaginationComponent } from "carbon-components-react";
 
 function Pagination(props) {
-  return <PaginationM {...props} />;
+  return <PaginationComponent {...props} />;
 }
 
 Pagination.propTypes = {
@@ -119,4 +119,16 @@ Pagination.propTypes = {
     defaultItemText: PropTypes.func,
 };
 
-export { Pagination as default };
+Pagination.defaultProps = {
+  backwardText: 'Previous page',
+  forwardText: 'Next page',
+  itemsPerPageText: 'Items per page:',
+  pageNumberText: 'Page Number',
+  disabled: false,
+  page: 1,
+  pagesUnknown: false,
+  isLastPage: false,
+  pageInputDisabled: false,
+};
+
+export default Pagination;

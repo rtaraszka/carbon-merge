@@ -1,26 +1,38 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Table as TableM } from "carbon-components-react";
+import { Table as TableComponent } from "carbon-components-react";
 
 function Table(props) {
-  return <TableM {...props}>{props.children}</TableM>;
+  return (
+      <TableComponent {...props} />
+  );
 }
 
 Table.propTypes = {
   /**
-   * Provide the contents of your Table
-   */
-  children: PropTypes.node,
-
-  /**
-   * Specify an optional className to be applied to the <table> node
+   * The CSS class names.
    */
   className: PropTypes.string,
 
   /**
-   * Specify an optional className to be applied to the container node
+   * `true` to add zebra striping.
    */
-  containerClassName: PropTypes.string, 
+  zebra: PropTypes.bool,
+
+  /**
+   * `true` for short data table.
+   */
+  short: PropTypes.bool,
+
+  /**
+   * `false` Applies styles for data tables with sorting functionality.
+   */
+  isSortable: PropTypes.bool,
+
+  /**
+   * `true` for data table without borders.
+   */
+  shouldShowBorder: PropTypes.bool,
 };
 
-export { Table as default };
+export default Table;

@@ -1,11 +1,14 @@
-import * as React from "react";
+import React from "react";
 import RadioButton from "../RadioButton";
 
 export default (
-<RadioButton
-  uxpId="1"
-  name="merge"
-  value="merge"
-  labelText="merge"
-/>
+    <RadioButton
+        className="some-class"
+        name="test"
+        value="standard"
+        labelText="Standard Radio Button"
+        labelPosition="right"
+        id="radio-1"
+        uxpId="RadioButton0"
+    />
 );
