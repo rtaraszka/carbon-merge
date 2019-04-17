@@ -7,6 +7,7 @@ module.exports = {
           "src/Icon/Icon.js",
           "src/Button/Button.js",
           "src/SecondaryButton/SecondaryButton.js",
+          "src/ButtonSkeleton/ButtonSkeleton.js",
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
           "src/CopyButton/CopyButton.js",

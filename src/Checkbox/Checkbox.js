@@ -7,7 +7,7 @@ class Checkbox extends Component {
     super(props);
 
     this.state = {
-      checked: props.checked,
+      checked: props.checked || props.defaultChecked,
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -21,8 +21,14 @@ class Checkbox extends Component {
   }
 
   render() {
-    return(
-      <CheckboxComponent {...this.props} checked={this.state.checked} onChange={this.handleChange} />
+    console.log('isChecked', this.state.checked);
+
+    return (
+      <CheckboxComponent
+          {...this.props}
+          checked={this.state.checked}
+          onChange={this.handleChange}
+      />
     );
   }
 }
