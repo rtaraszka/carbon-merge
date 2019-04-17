@@ -53,6 +53,7 @@ module.exports = {
           "src/TextInput/TextInput.js",
           "src/TextArea/TextArea.js",
           "src/NumberInput/NumberInput.js",
+          "src/NumberInputSkeleton/NumberInputSkeleton.js",
           "src/Checkbox/Checkbox.js",
           "src/CheckboxSkeleton/CheckboxSkeleton.js",
           "src/RadioButton/RadioButton.js",
