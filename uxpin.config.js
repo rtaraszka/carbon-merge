@@ -5,11 +5,13 @@ module.exports = {
         name: "General",
         include: [
           "src/Icon/Icon.js",
+          "src/IconSkeleton/IconSkeleton.js",
           "src/Button/Button.js",
           "src/SecondaryButton/SecondaryButton.js",
           "src/ButtonSkeleton/ButtonSkeleton.js",
           "src/Link/Link.js",
           "src/FileUploader/FileUploader.js",
+          "src/FileUploaderSkeleton/FileUploaderSkeleton.js",
           "src/CopyButton/CopyButton.js",
           "src/Loading/Loading.js",
           "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
@@ -25,10 +27,12 @@ module.exports = {
           "src/BreadcrumbSkeleton/BreadcrumbSkeleton.js",
           "src/Tab/Tab.js",
           "src/Tabs/Tabs.js",
+          "src/TabsSkeleton/TabsSkeleton.js",
           "src/TabContent/TabContent.js",
           "src/ContentSwitcher/ContentSwitcher.js",
           "src/Switch/Switch.js",
           "src/Search/Search.js",
+          "src/SearchSkeleton/SearchSkeleton.js",
           "src/SearchFilterButton/SearchFilterButton.js",
           "src/SearchLayoutButton/SearchLayoutButton.js",
         ]
@@ -49,18 +53,25 @@ module.exports = {
         name: "Form",
         include: [
           "src/TextInput/TextInput.js",
+          "src/TextInputSkeleton/TextInputSkeleton.js",
           "src/TextArea/TextArea.js",
+          "src/TextAreaSkeleton/TextAreaSkeleton.js",
           "src/NumberInput/NumberInput.js",
+          "src/NumberInputSkeleton/NumberInputSkeleton.js",
           "src/Checkbox/Checkbox.js",
           "src/CheckboxSkeleton/CheckboxSkeleton.js",
           "src/RadioButton/RadioButton.js",
           "src/RadioButtonGroup/RadioButtonGroup.js",
+          "src/RadioButtonSkeleton/RadioButtonSkeleton.js",
           "src/Toggle/Toggle.js",
+          "src/ToggleSkeleton/ToggleSkeleton.js",
           "src/ToggleSmall/ToggleSmall.js",
+          "src/ToggleSmallSkeleton/ToggleSmallSkeleton.js",
           "src/ListItem/ListItem.js",
           "src/SelectItem/SelectItem.js",
           "src/SelectItemGroup/SelectItemGroup.js",
           "src/Slider/Slider.js",
+          "src/SliderSkeleton/SliderSkeleton.js",
           "src/TimePicker/TimePicker.js",
           "src/TimePickerSelect/TimePickerSelect.js",
           "src/DatePicker/DatePicker.js",
@@ -72,6 +83,7 @@ module.exports = {
         include: [
           "src/ComboBox/ComboBox.js",
           "src/Select/Select.js",
+          "src/SelectSkeleton/SelectSkeleton.js",
           "src/MultiSelect/MultiSelect.js",
 
         ]
@@ -88,23 +100,14 @@ module.exports = {
           "src/CodeSnippetSkeleton/CodeSnippetSkeleton.js",
           "src/Pagination/Pagination.js",
           "src/ProgressIndicator/ProgressIndicator.js",
+          "src/ProgressIndicatorSkeleton/ProgressIndicatorSkeleton.js",
           "src/ProgressStep/ProgressStep.js",
           "src/InlineLoading/InlineLoading.js",
           "src/Tooltip/Tooltip.js",
           "src/TooltipDefinition/TooltipDefinition.js",
           "src/TooltipIcon/TooltipIcon.js",
           "src/Tag/Tag.js",
-        ]
-      },
-      {
-        name: "Table",
-        include: [
-          "src/Table/Table.js",
-          "src/TableRow/TableRow.js",
-          "src/TableHead/TableHead.js",
-          "src/TableHeader/TableHeader.js",
-          "src/TableBody/TableBody.js",
-          "src/TableData/TableData.js",
+          "src/TagSkeleton/TagSkeleton.js",
         ]
       },
       {
@@ -131,6 +134,7 @@ module.exports = {
           "src/StructuredListBody/StructuredListBody.js",
           "src/StructuredListRow/StructuredListRow.js",
           "src/StructuredListCell/StructuredListCell.js",
+          "src/StructuredListSkeleton/StructuredListSkeleton.js",
         ],
       },
       {
@@ -164,3 +168,9 @@ module.exports = {
 ** Temporarily unsuported:
 ** "src/DataTable/DataTable.js"
 */
+// "src/Table/Table.js",
+// "src/TableRow/TableRow.js",
+// "src/TableHead/TableHead.js",
+// "src/TableHeader/TableHeader.js",
+// "src/TableBody/TableBody.js",
+// "src/TableData/TableData.js",

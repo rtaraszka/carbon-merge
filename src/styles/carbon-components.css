@@ -18,6 +18,10 @@
   display: none;
 }
 
+.ng-element li {
+  list-style: none;
+}
+
 .ng-element * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
