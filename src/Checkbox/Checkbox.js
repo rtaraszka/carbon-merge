@@ -21,8 +21,6 @@ class Checkbox extends Component {
   }
 
   render() {
-    console.log('isChecked', this.state.checked);
-
     return (
       <CheckboxComponent
           {...this.props}

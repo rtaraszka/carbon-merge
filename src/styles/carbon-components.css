@@ -13869,7 +13869,7 @@ a.bx--navigation-link:focus {
   margin-left: 16rem;
 }
 
-.ng-element {
+.ng-element:not([class*="el-"]) {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   color: #171717 !important;
