@@ -16,7 +16,7 @@ module.exports = {
           "src/Loading/Loading.js",
           "src/SkeletonPlaceholder/SkeletonPlaceholder.js",
           "src/SkeletonText/SkeletonText.js",
-          "src/Tile/Tile.js",
+          "src/Tile/Tile.js"
         ]
       },
       {
@@ -34,7 +34,7 @@ module.exports = {
           "src/Search/Search.js",
           "src/SearchSkeleton/SearchSkeleton.js",
           "src/SearchFilterButton/SearchFilterButton.js",
-          "src/SearchLayoutButton/SearchLayoutButton.js",
+          "src/SearchLayoutButton/SearchLayoutButton.js"
         ]
       },
       {
@@ -46,7 +46,7 @@ module.exports = {
           "src/ToolbarOption/ToolbarOption.js",
           "src/ToolbarDivider/ToolbarDivider.js",
           "src/OverflowMenu/OverflowMenu.js",
-          "src/OverflowMenuItem/OverflowMenuItem.js",
+          "src/OverflowMenuItem/OverflowMenuItem.js"
         ]
       },
       {
@@ -75,7 +75,7 @@ module.exports = {
           "src/TimePicker/TimePicker.js",
           "src/TimePickerSelect/TimePickerSelect.js",
           "src/DatePicker/DatePicker.js",
-          "src/DatePickerInput/DatePickerInput.js",
+          "src/DatePickerInput/DatePickerInput.js"
         ]
       },
       {
@@ -84,8 +84,7 @@ module.exports = {
           "src/ComboBox/ComboBox.js",
           "src/Select/Select.js",
           "src/SelectSkeleton/SelectSkeleton.js",
-          "src/MultiSelect/MultiSelect.js",
-
+          "src/MultiSelect/MultiSelect.js"
         ]
       },
       {
@@ -107,15 +106,12 @@ module.exports = {
           "src/TooltipDefinition/TooltipDefinition.js",
           "src/TooltipIcon/TooltipIcon.js",
           "src/Tag/Tag.js",
-          "src/TagSkeleton/TagSkeleton.js",
+          "src/TagSkeleton/TagSkeleton.js"
         ]
       },
       {
         name: "Modal",
-        include: [
-          "src/ComposedModal/ComposedModal.js",
-          "src/Modal/Modal.js",
-        ],
+        include: ["src/ComposedModal/ComposedModal.js", "src/Modal/Modal.js"]
       },
       {
         name: "Form",
@@ -123,8 +119,8 @@ module.exports = {
           "src/Form/Form.js",
           "src/FormItem/FormItem.js",
           "src/FormLabel/FormLabel.js",
-          "src/FormGroup/FormGroup.js",
-        ],
+          "src/FormGroup/FormGroup.js"
+        ]
       },
       {
         name: "StructuredListCell",
@@ -134,8 +130,8 @@ module.exports = {
           "src/StructuredListBody/StructuredListBody.js",
           "src/StructuredListRow/StructuredListRow.js",
           "src/StructuredListCell/StructuredListCell.js",
-          "src/StructuredListSkeleton/StructuredListSkeleton.js",
-        ],
+          "src/StructuredListSkeleton/StructuredListSkeleton.js"
+        ]
       },
       {
         name: "UI Shell",
@@ -155,22 +151,23 @@ module.exports = {
           "src/UIShell/UIShellSideNavItems/UIShellSideNavItems.js",
           "src/UIShell/UIShellSideNavLink/UIShellSideNavLink.js",
           "src/UIShell/UIShellSideNavMenu/UIShellSideNavMenu.js",
-          "src/UIShell/UIShellSideNavMenuItem/UIShellSideNavMenuItem.js",
-        ],
+          "src/UIShell/UIShellSideNavMenuItem/UIShellSideNavMenuItem.js"
+        ]
       },
+      {
+        name: "DataTable",
+        include: [
+          // "src/DataTable/DataTable/DataTable.js",
+          "src/DataTable/Table/Table.js",
+          "src/DataTable/TableBody/TableBody.js",
+          "src/DataTable/TableCell/TableCell.js",
+          "src/DataTable/TableContainer/TableContainer.js",
+          "src/DataTable/TableHead/TableHead.js",
+          "src/DataTable/TableHeader/TableHeader.js",
+          "src/DataTable/TableRow/TableRow.js",
+        ]
+      }
     ]
   },
   name: "IBM Carbon"
 };
-
-
-/*
-** Temporarily unsuported:
-** "src/DataTable/DataTable.js"
-*/
-// "src/Table/Table.js",
-// "src/TableRow/TableRow.js",
-// "src/TableHead/TableHead.js",
-// "src/TableHeader/TableHeader.js",
-// "src/TableBody/TableBody.js",
-// "src/TableData/TableData.js",
