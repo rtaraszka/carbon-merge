@@ -49,7 +49,7 @@ If you wish to push IBM Carbon components to your UXPin account or set-up a cont
 | ComposedModal | 🔶 Partial support. Passing children doesn't work. To modify children use `modalHeader`, `modalBody`, `modalFooter` properties. |
 | ContentSwitcher | ✅ Full Support |
 | CopyButton | ✅ Full Support |
-| DataTable | 🔻 Not Supported. Unknown issues.|
+| DataTable | 🔶 Partial support. The highest component `DataTable` still need to be updated|
 | DataPicker | 🔶 Partial support. Only `simple` mode work. |
 | Dropdown | 🔻 Not Supported. Issueas with `React.cloneElement()` |
 | FileUploader | ✅ Full Support |

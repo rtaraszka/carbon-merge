@@ -9,7 +9,7 @@ import TableCell from "../../TableCell/TableCell";
 
 
 export default (
-    <TableContainer title="DataTable" description="With default options" uxpId="DataTable0">
+    <TableContainer title="DataTable" description="With default options" style={{"width": "100%"}} uxpId="DataTable0">
       <Table uxpId="DataTable1">
         <TableHead uxpId="DataTable2">
           <TableHeader isSortable uxpId="TableHeeader0">Name</TableHeader>
