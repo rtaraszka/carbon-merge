@@ -157,7 +157,6 @@ module.exports = {
       {
         name: "DataTable",
         include: [
-          // "src/DataTable/DataTable/DataTable.js",
           "src/DataTable/Table/Table.js",
           "src/DataTable/TableBody/TableBody.js",
           "src/DataTable/TableCell/TableCell.js",
@@ -171,3 +170,7 @@ module.exports = {
   },
   name: "IBM Carbon"
 };
+
+/* Currently not working
+"src/DataTable/DataTable/DataTable.js",
+*/

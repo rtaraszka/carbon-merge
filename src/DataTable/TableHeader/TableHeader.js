@@ -66,7 +66,6 @@ TableHeader.propTypes = {
 TableHeader.defaultProps = {
   isSortable: false,
   scope: 'col',
-  // translateWithId,
 };
 
 export default TableHeader;

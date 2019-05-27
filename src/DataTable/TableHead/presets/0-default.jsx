@@ -3,5 +3,5 @@ import TableHead from '../TableHead';
 
 
 export default (
-  <TableHead/>
+  <TableHead />
 );

@@ -77,7 +77,6 @@ DataTable.defaultProps = {
   sortRow: defaultSortRow,
   filterRows: defaultFilterRows,
   locale: 'en',
-  // translateWithId,
 };
 
 
